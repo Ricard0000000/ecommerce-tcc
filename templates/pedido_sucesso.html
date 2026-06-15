@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}Pedido realizado{% endblock %}
+
+{% block content %}
+
+<div class="container text-center mt-5">
+
+    <div class="card p-5 shadow mx-auto border-0 rounded-4"
+         style="max-width: 500px;">
+
+        <h2 class="mb-3 fw-bold">
+            🎉 Pedido realizado com sucesso!
+        </h2>
+
+        <p class="mb-2">
+            <strong>Número do pedido:</strong>
+            #{{ pedido.id }}
+        </p>
+
+        <p class="mb-4">
+            <strong>Total:</strong>
+            R$ {{ pedido.total }}
+        </p>
+
+        <p class="text-muted">
+            Seu pedido foi registrado e está sendo processado.
+        </p>
+
+        <a href="/"
+           class="btn btn-dark mt-3">
+
+            Continuar comprando
+
+        </a>
+
+    </div>
+
+</div>
+
+{% endblock %}

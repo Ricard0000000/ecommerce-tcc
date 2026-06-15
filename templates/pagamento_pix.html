@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+
+{% block title %}Pagamento PIX{% endblock %}
+
+{% block content %}
+
+<div class="container mt-5 mb-5">
+
+```
+<div class="row justify-content-center">
+
+    <div class="col-lg-6">
+
+        <div class="card shadow border-0 rounded-4">
+
+            <div class="card-body text-center p-5">
+
+                <h2 class="fw-bold mb-3">
+                    💳 Pagamento via PIX
+                </h2>
+
+                <p class="text-muted mb-4">
+                    Escaneie o QR Code abaixo para concluir o pagamento.
+                </p>
+
+                {% if qr_code_base64 %}
+
+                    <img
+                        src="data:image/png;base64,{{ qr_code_base64 }}"
+                        class="img-fluid mb-4"
+                        alt="QR Code PIX"
+                    >
+
+                {% else %}
+
+                    <div class="alert alert-danger">
+                        Erro ao gerar QR Code PIX.
+                    </div>
+
+                {% endif %}
+
+                {% if qr_code %}
+
+                    <div class="alert alert-light border text-start">
+
+                        <strong>PIX Copia e Cola</strong>
+
+                        <textarea
+                            id="pixCode"
+                            class="form-control mt-2"
+                            rows="5"
+                            readonly
+                        >{{ qr_code }}</textarea>
+
+                        <button
+                            class="btn btn-primary mt-3"
+                            onclick="copiarPix()"
+                        >
+                            Copiar código PIX
+                        </button>
+
+                    </div>
+
+                {% endif %}
+
+                <div
+                    id="statusPagamento"
+                    class="alert alert-warning mt-4"
+                >
+                    ⏳ Aguardando confirmação do pagamento...
+                </div>
+
+                <div class="alert alert-info">
+
+                    <strong>Pedido:</strong>
+                    #{{ pedido.id }}
+
+                    <br>
+
+                    <strong>Status:</strong>
+                    {{ pedido.get_status_display }}
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</div>
+
+<script>
+
+function copiarPix() {
+
+    let texto = document.getElementById("pixCode");
+
+    texto.select();
+    texto.setSelectionRange(0, 99999);
+
+    navigator.clipboard.writeText(texto.value);
+
+    alert("Código PIX copiado!");
+}
+
+function verificarPagamento() {
+
+    fetch("/verificar-pagamento/{{ pedido.id }}/")
+
+    .then(response => response.json())
+
+    .then(data => {
+
+        if (data.status === "aprovado") {
+
+            document.getElementById(
+                "statusPagamento"
+            ).innerHTML =
+            "✅ Pagamento aprovado!";
+
+            window.location.href =
+            "/pedido/sucesso/{{ pedido.id }}/";
+        }
+
+    })
+
+    .catch(error => {
+        console.log(error);
+    });
+}
+
+setInterval(
+    verificarPagamento,
+    5000
+);
+
+</script>
+
+{% endblock %}

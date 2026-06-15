@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+
+{% block title %}Bonsai Garden{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<div class="hero"
+     style="
+        background-image: url('{{ banner.imagem.url }}');
+        background-size: cover;
+        background-position: center;
+        height: 340px;
+     ">
+</div>
+
+<!-- TÍTULO DA CATEGORIA -->
+{% if categoria_atual %}
+<div class="container mt-5">
+
+    <h2 class="mb-4 fw-bold">
+        {{ categoria_atual.nome }}
+    </h2>
+
+</div>
+{% endif %}
+
+<!-- PRODUTOS -->
+<div class="container mt-5">
+
+    <div class="row">
+
+        {% for produto in produtos %}
+        <div class="col-md-4 mb-4 d-flex">
+
+            <div class="card w-100">
+
+                <!-- IMAGEM -->
+                <a href="/produto/{{ produto.id }}/">
+                    {% if produto.imagem %}
+                        <img src="{{ produto.imagem.url }}"
+                             class="produto-img">
+                    {% endif %}
+                </a>
+
+                <div class="card-body d-flex flex-column">
+
+                    <!-- NOME -->
+                    <a href="/produto/{{ produto.id }}/"
+                       class="categoria-link">
+                        <h5 class="card-title">
+                            {{ produto.nome }}
+                        </h5>
+                    </a>
+
+                    <!-- CATEGORIA -->
+                    <a href="/categoria/{{ produto.categoria.id }}/"
+                       class="categoria-link mb-2">
+                        {{ produto.categoria }}
+                    </a>
+
+                    <!-- DESCRIÇÃO -->
+                    <p class="text-muted">
+                        {{ produto.descricao|truncatechars:80 }}
+                    </p>
+
+                    <!-- PREÇO -->
+                    <h6 class="text-success mt-auto">
+                        R$ {{ produto.preco }}
+                    </h6>
+
+                    <!-- BOTÃO -->
+                    <button
+                        class="btn btn-primary w-100 mt-2 add-carrinho"
+                        data-id="{{ produto.id }}">
+
+                        🛒 Adicionar ao carrinho
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        {% empty %}
+        <p class="text-center">Nenhum produto cadastrado</p>
+        {% endfor %}
+
+    </div>
+
+</div>
+
+<script>
+
+document.querySelectorAll(".add-carrinho").forEach(botao => {
+
+    botao.addEventListener("click", function() {
+
+        let produtoId = this.dataset.id;
+
+        fetch(`/carrinho/ajax/add/${produtoId}/`)
+        .then(response => response.json())
+        .then(data => {
+
+            document.querySelector(".carrinho-count").innerText =
+                data.total_itens;
+
+            var modal = new bootstrap.Modal(
+                document.getElementById('mensagemModal')
+            );
+
+            modal.show();
+
+            setTimeout(function () {
+                modal.hide();
+            }, 2000);
+
+        });
+
+    });
+
+});
+
+</script>
+
+{% endblock %}

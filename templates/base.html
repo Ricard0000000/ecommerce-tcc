@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Bonsai Garden Shop{% endblock %}</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #f4f6f9;
+            margin: 0;
+        }
+
+        .navbar {
+            background: #111;
+        }
+
+        .navbar-brand {
+            color: white !important;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .btn-categoria {
+            margin-right: 8px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 0;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .produto-card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .carrinho-card {
+            border-radius: 12px !important;
+        }
+
+        .carrinho-card:hover {
+            transform: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .produto-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .btn-primary {
+            background: #111 !important;
+            border: none !important;
+        }
+
+        .btn-primary:hover {
+            background: #000 !important;
+        }
+
+        .categoria-link {
+            text-decoration: none;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .categoria-link:hover {
+            color: #111;
+        }
+
+        .modal-content {
+            border-radius: 16px;
+            border: none;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .modal-body {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .dropdown-menu {
+            border-radius: 12px;
+            border: none;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg px-4 py-3">
+
+    <a class="navbar-brand" href="{% url 'home' %}">
+        Bonsai Garden
+    </a>
+
+    <div class="ms-4">
+        {% for categoria in categorias %}
+            <a href="{% url 'produtos_categoria' categoria.id %}"
+               class="btn btn-outline-light btn-categoria">
+                {{ categoria.nome }}
+            </a>
+        {% endfor %}
+    </div>
+
+    <div class="ms-auto d-flex align-items-center gap-2">
+
+        <!-- CARRINHO -->
+        <a href="{% url 'ver_carrinho' %}" class="btn btn-outline-light">
+            🛒 Carrinho
+            (<span class="carrinho-count">{{ total_itens|default:0 }}</span>)
+        </a>
+
+        {% if user.is_authenticated %}
+
+            <div class="dropdown">
+
+                <button
+                    class="btn btn-outline-light dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                >
+                    👤 Minha Conta
+                </button>
+
+                <ul class="dropdown-menu dropdown-menu-end">
+
+                    <li>
+                        <a
+                            class="dropdown-item"
+                            href="{% url 'meus_pedidos' %}"
+                        >
+                            📋 Meus Pedidos
+                        </a>
+                    </li>
+
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+
+                    <li>
+
+                        <form
+                            method="post"
+                            action="{% url 'logout' %}"
+                        >
+                            {% csrf_token %}
+
+                            <button
+                                type="submit"
+                                class="dropdown-item text-danger"
+                            >
+                                🚪 Sair
+                            </button>
+
+                        </form>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        {% else %}
+
+            <a
+                href="{% url 'login' %}"
+                class="btn btn-outline-light btn-sm"
+            >
+                Login
+            </a>
+
+        {% endif %}
+
+    </div>
+
+</nav>
+
+<!-- MODAL -->
+<div class="modal fade" id="mensagemModal" tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+
+            <div class="modal-body" id="modalMensagem">
+                Produto adicionado ao carrinho 🛒
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container-fluid px-4">
+
+    {% block content %}
+    {% endblock %}
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

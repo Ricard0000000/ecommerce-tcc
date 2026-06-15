@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+
+{% block title %}Carrinho - Bonsai Garden{% endblock %}
+
+{% block content %}
+
+<div class="container mt-5 mb-5">
+
+    <h2 class="mb-4 fw-bold">
+        🛒 Seu Carrinho
+    </h2>
+
+    {% if itens %}
+
+    <div class="row">
+
+        <!-- LISTA DE PRODUTOS -->
+        <div class="col-lg-8">
+
+            {% for item in itens %}
+            <div class="card carrinho-card mb-3 shadow-sm border-0">
+
+                <div class="card-body">
+
+                    <div class="d-flex align-items-center">
+
+                        <!-- IMAGEM -->
+                        <div style="width: 120px; min-width: 120px;">
+
+                            {% if item.produto.imagem %}
+                                <img src="{{ item.produto.imagem.url }}"
+                                     style="
+                                        width: 100%;
+                                        height: 110px;
+                                        object-fit: cover;
+                                        border-radius: 10px;
+                                     ">
+                            {% endif %}
+
+                        </div>
+
+                        <!-- INFO -->
+                        <div class="ms-4 flex-grow-1">
+
+                            <h5 class="fw-bold mb-1">
+                                {{ item.produto.nome }}
+                            </h5>
+
+                            <p class="text-muted mb-1">
+                                {{ item.produto.categoria }}
+                            </p>
+
+                            <p class="mb-1">
+                                Quantidade:
+                                <strong>{{ item.quantidade }}</strong>
+                            </p>
+
+                            <p class="text-success fw-bold mb-0">
+                                R$ {{ item.subtotal }}
+                            </p>
+
+                        </div>
+
+                        <!-- BOTÕES -->
+                        <div class="d-flex flex-column gap-2">
+
+                            <a href="/carrinho/add/{{ item.produto.id }}/"
+                               class="btn btn-sm btn-primary">
+                                +
+                            </a>
+
+                            <a href="/carrinho/diminuir/{{ item.produto.id }}/"
+                               class="btn btn-sm btn-warning">
+                                -
+                            </a>
+
+                            <a href="/carrinho/remover/{{ item.produto.id }}/"
+                               class="btn btn-sm btn-danger">
+                                🗑
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            {% endfor %}
+
+        </div>
+
+        <!-- RESUMO -->
+        <div class="col-lg-4">
+
+            <div class="card shadow-sm border-0">
+
+                <div class="card-body">
+
+                    <h4 class="fw-bold mb-4">
+                        📦 Resumo do Pedido
+                    </h4>
+
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Itens:</span>
+                        <strong>{{ total_itens }}</strong>
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-3">
+                        <span>Total:</span>
+
+                        <strong class="text-success fs-4">
+                            R$ {{ total }}
+                        </strong>
+                    </div>
+
+                    <hr>
+
+                    <!-- BOTÃO CHECKOUT -->
+                    <a href="{% url 'checkout' %}"
+                       class="btn btn-success w-100 py-3 fw-bold">
+
+                        📦 Ir para Checkout
+
+                    </a>
+
+                    <!-- CONTINUAR COMPRANDO -->
+                    <a href="/"
+                       class="btn w-100 mt-3 text-white"
+                       style="
+                            background: #111;
+                            border: none;
+                            padding: 12px;
+                            font-weight: bold;
+                       ">
+
+                        ← Continuar Comprando
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    {% else %}
+
+    <div class="text-center mt-5">
+
+        <h3 class="mb-3">
+            Seu carrinho está vazio 🛒
+        </h3>
+
+        <a href="/"
+           class="btn btn-dark">
+
+            Voltar para a loja
+
+        </a>
+
+    </div>
+
+    {% endif %}
+
+</div>
+
+{% endblock %}

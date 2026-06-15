@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}Criar conta{% endblock %}
+
+{% block content %}
+
+<style>
+    .auth-card input {
+        border: 1px solid #cfcfcf;
+        border-radius: 10px;
+        padding: 12px;
+        background-color: #f8f9fa;
+        outline: none;
+        transition: 0.2s;
+    }
+
+    .auth-card input:focus {
+        border: 1px solid #6c757d;
+        background-color: #ffffff;
+        box-shadow: 0 0 0 3px rgba(108, 117, 125, 0.15);
+    }
+</style>
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+
+    <div class="card shadow p-4 auth-card" style="width: 420px; border-radius: 16px;">
+
+        <h3 class="text-center mb-3">Criar conta</h3>
+
+        <form method="POST">
+            {% csrf_token %}
+
+            <!-- USUÁRIO -->
+            <div class="mb-3">
+                <label class="form-label">Usuário</label>
+                <input type="text" name="username" class="form-control" required>
+            </div>
+
+            <!-- E-MAIL -->
+            <div class="mb-3">
+                <label class="form-label">E-mail</label>
+                <input type="email" name="email" class="form-control" required>
+            </div>
+
+            <!-- SENHA -->
+            <div class="mb-3">
+                <label class="form-label">Senha</label>
+                <input type="password" name="password1" class="form-control" required>
+            </div>
+
+            <!-- CONFIRMAR SENHA -->
+            <div class="mb-3">
+                <label class="form-label">Confirmar senha</label>
+                <input type="password" name="password2" class="form-control" required>
+            </div>
+
+            <button type="submit" class="btn btn-dark w-100">
+                Criar conta
+            </button>
+
+        </form>
+
+        <p class="text-center mt-3">
+            Já tem conta?
+            <a href="{% url 'login' %}">Entrar</a>
+        </p>
+
+    </div>
+
+</div>
+
+{% endblock %}

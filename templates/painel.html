@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Painel da Loja</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        html, body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .painel-wrapper {
+            width: 100% !important;
+            max-width: 100% !important;
+            padding: 30px;
+        }
+
+        table {
+            width: 100% !important;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+
+<div class="painel-wrapper">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Painel da Loja</h2>
+
+        <a href="{% url 'logout' %}" class="btn btn-danger">
+            Sair
+        </a>
+    </div>
+
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Nome</th>
+                <th>Preço</th>
+                <th style="width: 200px;">Ações</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for produto in produtos %}
+            <tr>
+                <td>{{ produto.nome }}</td>
+                <td>R$ {{ produto.preco }}</td>
+
+                <td>
+                    <a href="#" class="btn btn-sm btn-warning">Editar</a>
+                    <a href="#" class="btn btn-sm btn-danger">Excluir</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+
+</body>
+</html>

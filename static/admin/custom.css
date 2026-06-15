@@ -1,0 +1,18 @@
+#content-main {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+}
+
+#content-related {
+    display: none !important;
+}
+
+.dashboard #content {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.dashboard .module {
+    width: 100% !important;
+}
