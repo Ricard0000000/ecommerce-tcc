@@ -321,8 +321,8 @@
         "numero": "yy",
         "complemento": "yy",
         "valor_frete": "0.00",
-        "tipo_frete": "",
-        "prazo_entrega": "",
+        "tipo_frete": "null",
+        "prazo_entrega": "null",
         "codigo_frete": null
     }
 },
@@ -345,8 +345,8 @@
         "numero": "1",
         "complemento": "1",
         "valor_frete": "0.00",
-        "tipo_frete": "",
-        "prazo_entrega": "",
+        "tipo_frete": "null",
+        "prazo_entrega": "null",
         "codigo_frete": null
     }
 },
