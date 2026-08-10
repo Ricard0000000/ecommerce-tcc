@@ -25,7 +25,9 @@ from produtos.views import (
     checkout,
     pagamento_pix,
     verificar_pagamento,
-    teste_melhor_envio
+    teste_melhor_envio,
+    calcular_frete,
+    selecionar_frete
 )
 
 urlpatterns = [
@@ -39,7 +41,7 @@ urlpatterns = [
         'teste-melhor-envio/',
         teste_melhor_envio,
         name='teste_melhor_envio'
-),
+    ),
 
     # ACCOUNTS
     path('accounts/', include('accounts.urls')),
@@ -84,6 +86,19 @@ urlpatterns = [
         'carrinho/ajax/add/<int:id>/',
         adicionar_carrinho_ajax,
         name='add_carrinho_ajax'
+    ),
+
+    # ROTAS DE FRETE
+    path(
+        'carrinho/calcular-frete/', 
+        calcular_frete, 
+        name='calcular_frete'
+    ),
+    
+    path(
+        'carrinho/selecionar-frete/', 
+        selecionar_frete, 
+        name='selecionar_frete'
     ),
 
     # CHECKOUT
@@ -151,6 +166,33 @@ urlpatterns = [
         ),
         name='logout'
     ),
+
+    # --------------------------------------------------------------------------
+    # 🔐 INÍCIO DAS ALTERAÇÕES: RECUPERAÇÃO DE SENHA NATIVA DO DJANGO
+    # --------------------------------------------------------------------------
+    path(
+        'reset_password/', 
+        auth_views.PasswordResetView.as_view(template_name='accounts/password_reset_form.html'), 
+        name='reset_password'
+    ),
+    path(
+        'reset_password_sent/', 
+        auth_views.PasswordResetDoneView.as_view(template_name='accounts/password_reset_done.html'), 
+        name='password_reset_done'
+    ),
+    path(
+        'reset/<uidb64>/<token>/', 
+        auth_views.PasswordResetConfirmView.as_view(template_name='accounts/password_reset_confirm.html'), 
+        name='password_reset_confirm'
+    ),
+    path(
+        'reset_password_complete/', 
+        auth_views.PasswordResetCompleteView.as_view(template_name='accounts/password_reset_complete.html'), 
+        name='password_reset_complete'
+    ),
+    # --------------------------------------------------------------------------
+    # 🔐 FIM DAS ALTERAÇÕES
+    # --------------------------------------------------------------------------
 
     # PAINEL
     path(

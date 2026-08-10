@@ -18,7 +18,7 @@
                         📦 Checkout
                     </h2>
 
-        <form method="POST" action="{% url 'finalizar_pedido' %}">
+                    <form method="POST" action="{% url 'finalizar_pedido' %}">
 
                         {% csrf_token %}
 
@@ -42,10 +42,18 @@
 
                             <div class="col-md-6 mb-3">
                                 <label class="form-label fw-bold">CEP</label>
-                                <input type="text"
-                                       name="cep"
-                                       class="form-control border-secondary-subtle bg-light"
-                                       required>
+                                <div class="input-group">
+                                    <input type="text"
+                                           name="cep"
+                                           class="form-control border-secondary-subtle bg-light"
+                                           value="{{ cep_calculado }}"
+                                           readonly
+                                           style="cursor: not-allowed; background-color: #e9ecef;">
+                                    <span class="input-group-text bg-white" title="CEP vinculado ao frete calculado">
+                                        🔒
+                                    </span>
+                                </div>
+                                <small class="text-muted">CEP do frete calculado. Para alterar, retorne ao carrinho.</small>
                             </div>
 
                             <div class="col-md-6 mb-3">
@@ -101,12 +109,19 @@
 
                             {% endfor %}
 
+                            {% if frete_selecionado %}
+                            <div class="d-flex justify-content-between mb-2 text-muted small">
+                                <span>Frete ({{ frete_selecionado.name }}):</span>
+                                <strong>R$ {{ frete_selecionado.valor }}</strong>
+                            </div>
+                            {% endif %}
+
                             <hr>
 
                             <div class="d-flex justify-content-between">
-                                <h5 class="fw-bold">Total:</h5>
+                                <h5 class="fw-bold">Total Final:</h5>
                                 <h5 class="fw-bold text-success">
-                                    R$ {{ total }}
+                                    R$ {{ total_com_frete }}
                                 </h5>
                             </div>
 

@@ -4,6 +4,25 @@
 
 {% block content %}
 
+<style>
+    /* Estilo para as bolinhas de frete dentro do container */
+    #opcoes-frete-container .input-frete-opcao {
+        width: 1.25em;
+        height: 1.25em;
+        border: 2px solid #adb5bd !important;
+        background-color: #ffffff !important;
+        cursor: pointer;
+        appearance: none;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    #opcoes-frete-container .input-frete-opcao:checked {
+        border: 4px solid #0d6efd !important;
+        background-color: #ffffff !important;
+    }
+</style>
+
 <div class="container mt-5 mb-5">
 
     <h2 class="mb-4 fw-bold">
@@ -14,7 +33,6 @@
 
     <div class="row">
 
-        <!-- LISTA DE PRODUTOS -->
         <div class="col-lg-8">
 
             {% for item in itens %}
@@ -24,7 +42,6 @@
 
                     <div class="d-flex align-items-center">
 
-                        <!-- IMAGEM -->
                         <div style="width: 120px; min-width: 120px;">
 
                             {% if item.produto.imagem %}
@@ -39,7 +56,6 @@
 
                         </div>
 
-                        <!-- INFO -->
                         <div class="ms-4 flex-grow-1">
 
                             <h5 class="fw-bold mb-1">
@@ -61,17 +77,16 @@
 
                         </div>
 
-                        <!-- BOTÕES -->
                         <div class="d-flex flex-column gap-2">
 
                             <a href="/carrinho/add/{{ item.produto.id }}/"
                                class="btn btn-sm btn-primary">
-                                +
+                                 +
                             </a>
 
                             <a href="/carrinho/diminuir/{{ item.produto.id }}/"
                                class="btn btn-sm btn-warning">
-                                -
+                                 -
                             </a>
 
                             <a href="/carrinho/remover/{{ item.produto.id }}/"
@@ -90,7 +105,6 @@
 
         </div>
 
-        <!-- RESUMO -->
         <div class="col-lg-4">
 
             <div class="card shadow-sm border-0">
@@ -106,25 +120,36 @@
                         <strong>{{ total_itens }}</strong>
                     </div>
 
-                    <div class="d-flex justify-content-between mb-3">
-                        <span>Total:</span>
+                    <div class="mb-3 mt-3">
+                        <label for="cep-input" class="form-label fw-bold small text-muted">Calcular Frete</label>
+                        <div class="d-flex gap-2">
+                            <input type="text" id="cep-input" class="form-control" placeholder="00000-000" maxlength="9">
+                            <button class="btn btn-outline-dark" type="button" id="btn-calcular-frete">Calcular</button>
+                        </div>
+                        <div id="opcoes-frete-container" class="mt-3" style="display: none;"></div>
+                    </div>
 
-                        <strong class="text-success fs-4">
-                            R$ {{ total }}
+                    <hr>
+
+                    <div class="d-flex justify-content-between mb-3">
+                        <span>Subtotal:</span>
+                        <strong id="subtotal-valor" data-valor="{{ total }}">R$ {{ total }}</strong>
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-3">
+                        <span>Total com Frete:</span>
+                        <strong class="text-success fs-4" id="total-carrinho">
+                            R$ {{ total_com_frete }}
                         </strong>
                     </div>
 
                     <hr>
 
-                    <!-- BOTÃO CHECKOUT -->
                     <a href="{% url 'checkout' %}"
                        class="btn btn-success w-100 py-3 fw-bold">
-
                         📦 Ir para Checkout
-
                     </a>
 
-                    <!-- CONTINUAR COMPRANDO -->
                     <a href="/"
                        class="btn w-100 mt-3 text-white"
                        style="
@@ -133,9 +158,7 @@
                             padding: 12px;
                             font-weight: bold;
                        ">
-
                         ← Continuar Comprando
-
                     </a>
 
                 </div>
@@ -156,9 +179,7 @@
 
         <a href="/"
            class="btn btn-dark">
-
             Voltar para a loja
-
         </a>
 
     </div>
@@ -166,5 +187,92 @@
     {% endif %}
 
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const btnCalcular = document.getElementById('btn-calcular-frete');
+    const cepInput = document.getElementById('cep-input');
+    const containerFrete = document.getElementById('opcoes-frete-container');
+    const subtotalEl = document.getElementById('subtotal-valor');
+    const totalCarrinhoEl = document.getElementById('total-carrinho');
+
+    function atualizarTotalVisual(valorFrete) {
+        const subtotal = parseFloat(subtotalEl.getAttribute('data-valor').replace(',', '.'));
+        const frete = parseFloat(valorFrete.replace(',', '.'));
+        const novoTotal = subtotal + frete;
+        totalCarrinhoEl.innerText = 'R$ ' + novoTotal.toFixed(2).replace('.', ',');
+    }
+
+    if (btnCalcular) {
+        btnCalcular.addEventListener('click', function() {
+            const cep = cepInput.value.replace(/\D/g, '');
+            if (cep.length !== 8) {
+                alert('Por favor, digite um CEP válido com 8 dígitos.');
+                return;
+            }
+
+            btnCalcular.innerText = "Calculando...";
+            btnCalcular.disabled = true;
+
+            const csrftoken = "{{ csrf_token }}";
+            const formData = new FormData();
+            formData.append('cep', cep);
+
+            fetch('/carrinho/calcular-frete/', {
+                method: 'POST',
+                headers: { 'X-CSRFToken': csrftoken },
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                btnCalcular.innerText = "Calcular";
+                btnCalcular.disabled = false;
+
+                if (data.success) {
+                    containerFrete.innerHTML = '<h6 class="fw-bold small mb-2">Selecione o envio:</h6>';
+                    
+                    data.opcoes.forEach((opcao, index) => {
+                        containerFrete.innerHTML += `
+                            <div class="form-check border p-2 rounded mb-2 bg-light d-flex align-items-center">
+                                <input class="input-frete-opcao" type="radio" name="frete_opcao" id="frete_${index}" data-nome="${opcao.name}" data-valor="${opcao.price}">
+                                <label class="form-check-label d-flex justify-content-between" for="frete_${index}" style="width: 100%;">
+                                    <span>${opcao.name} (${opcao.delivery_time} dias)</span>
+                                    <strong class="text-dark">R$ ${opcao.price}</strong>
+                                </label>
+                            </div>
+                        `;
+                    });
+                    containerFrete.style.display = 'block';
+                    vincularEventosSelecao();
+                } else {
+                    alert(data.message || 'Erro ao calcular o frete.');
+                }
+            });
+        });
+    }
+
+    function vincularEventosSelecao() {
+        const radios = document.querySelectorAll('.input-frete-opcao');
+        radios.forEach(radio => {
+            radio.addEventListener('change', function() {
+                const nome = this.getAttribute('data-nome');
+                const valor = this.getAttribute('data-valor');
+                
+                atualizarTotalVisual(valor);
+
+                const formData = new FormData();
+                formData.append('nome', nome);
+                formData.append('valor', valor);
+
+                fetch('/carrinho/selecionar-frete/', {
+                    method: 'POST',
+                    headers: { 'X-CSRFToken': '{{ csrf_token }}' },
+                    body: formData
+                });
+            });
+        });
+    }
+});
+</script>
 
 {% endblock %}

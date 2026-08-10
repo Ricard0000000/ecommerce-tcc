@@ -9,7 +9,6 @@ def renovar_token():
         print("Erro: Nenhum refresh_token encontrado no banco de dados.")
         return None
 
-    # Colocamos o 'sandbox.' aqui
     url = "https://sandbox.melhorenvio.com.br/oauth/token"
     payload = {
         "grant_type": "refresh_token",
@@ -33,17 +32,24 @@ def renovar_token():
 
 
 def obter_access_token():
+    # ALTERAÇÃO SEGURA: Primeiro tenta pegar o token novo do seu settings.py (.env)
+    token_env = getattr(settings, 'MELHOR_ENVIO_ACCESS_TOKEN', None)
+    if token_env:
+        return token_env
+        
+    # Se não achar no .env, mantém o comportamento antigo de buscar no banco
     token_banco = MelhorEnvioToken.objects.first()
     if token_banco:
         return token_banco.access_token
     return None
 
 
-def consultar_frete():
+def calcular_frete_api(cep_destino, produtos_carrinho):
     token = obter_access_token()
     
     if not token:
-        return {"error": "Nenhum token encontrado no banco de dados."}
+        print("Nenhum token encontrado no banco de dados ou no settings.py.")
+        return None
 
     headers = {
         "Authorization": f"Bearer {token}",
@@ -51,54 +57,40 @@ def consultar_frete():
         "Content-Type": "application/json"
     }
 
-    # Colocamos o 'sandbox.' aqui
     url = "https://sandbox.melhorenvio.com.br/api/v2/me/shipment/calculate"
 
+    # Agora o payload envia a lista dinâmica gerada a partir do carrinho da sessão
     payload = {
         "from": {
             "postal_code": settings.CEP_ORIGEM
         },
         "to": {
-            "postal_code": "30140071"
+            "postal_code": str(cep_destino)
         },
-        "products": [
-            {
-                "id": "1",
-                "width": 20,
-                "height": 20,
-                "length": 20,
-                "weight": 1,
-                "insurance_value": 100,
-                "quantity": 1
-            }
-        ]
+        "products": produtos_carrinho
     }
 
-    response = requests.post(url, json=payload, headers=headers)
-    resultado = response.json()
+    try:
+        response = requests.post(url, json=payload, headers=headers, timeout=10)
+        resultado = response.json()
 
-    if response.status_code == 401 or resultado.get("message") == "Unauthenticated.":
-        print("Token expirado detectado! Tentando renovar automaticamente...")
-        novo_token = renovar_token()
-        if novo_token:
-            headers["Authorization"] = f"Bearer {novo_token}"
-            response = requests.post(url, json=payload, headers=headers)
-            return response.json()
+        is_unauthorized = (
+            response.status_code in [401, 403] or 
+            (isinstance(resultado, dict) and (
+                resultado.get("message") == "Unauthenticated." or 
+                "unauthorized" in str(resultado.get("message", "")).lower()
+            ))
+        )
 
-    return resultado
+        if is_unauthorized:
+            print("Token inválido ou não autorizado detectado! Forçando renovação automática...")
+            novo_token = renovar_token()
+            if novo_token:
+                headers["Authorization"] = f"Bearer {novo_token}"
+                response = requests.post(url, json=payload, headers=headers)
+                return response.json()
 
-
-def trocar_code_por_token(code):
-    # Colocamos o 'sandbox.' aqui também
-    url = "https://sandbox.melhorenvio.com.br/oauth/token"
-
-    payload = {
-        "grant_type": "authorization_code",
-        "client_id": settings.MELHOR_ENVIO_CLIENT_ID,
-        "client_secret": settings.MELHOR_ENVIO_CLIENT_SECRET,
-        "redirect_uri": settings.MELHOR_ENVIO_REDIRECT_URI,
-        "code": code
-    }
-
-    response = requests.post(url, json=payload)
-    return response.json()
+        return resultado
+    except Exception as e:
+        print(f"Erro na requisição do frete: {e}")
+        return None

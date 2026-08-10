@@ -6,12 +6,14 @@ from django.contrib.auth.models import User
 class Categoria(models.Model):
     nome = models.CharField(max_length=100)
     imagem = models.ImageField(upload_to='categorias/')
+    # 👈 Novo campo adicionado para controlar a exibição na home:
+    destaque_home = models.BooleanField(default=False, verbose_name="Exibir na Home?")
 
     def __str__(self):
         return self.nome
 
 
-# 📦 PRODUTO
+# 📦 PRODUTO (Ajustado o texto para o Admin)
 class Produto(models.Model):
     nome = models.CharField(max_length=100)
     descricao = models.TextField()
@@ -19,31 +21,15 @@ class Produto(models.Model):
     estoque = models.IntegerField()
 
     # 📦 Dados para cálculo de frete
-    peso = models.DecimalField(
-        max_digits=6,
-        decimal_places=2,
-        default=1.00
-    )
-
-    altura = models.DecimalField(
-        max_digits=6,
-        decimal_places=2,
-        default=20.00
-    )
-
-    largura = models.DecimalField(
-        max_digits=6,
-        decimal_places=2,
-        default=20.00
-    )
-
-    comprimento = models.DecimalField(
-        max_digits=6,
-        decimal_places=2,
-        default=20.00
-    )
+    peso = models.DecimalField(max_digits=6, decimal_places=2, default=1.00)
+    altura = models.DecimalField(max_digits=6, decimal_places=2, default=20.00)
+    largura = models.DecimalField(max_digits=6, decimal_places=2, default=20.00)
+    comprimento = models.DecimalField(max_digits=6, decimal_places=2, default=20.00)
 
     ativo = models.BooleanField(default=True)
+
+    # 💡 Mudamos o texto aqui para "Exibir na Home?" para fazer sentido com a trava
+    destaque_home = models.BooleanField(default=False, verbose_name="Exibir na Home?")
 
     imagem = models.ImageField(
         upload_to='produtos/',
@@ -196,6 +182,7 @@ class ItemPedido(models.Model):
 
     def __str__(self):
         return f"{self.produto.nome} ({self.quantidade})"
+
 
 # 🔐 TOKEN MELHOR ENVIO
 class MelhorEnvioToken(models.Model):
