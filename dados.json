@@ -321,7 +321,7 @@
         "numero": "yy",
         "complemento": "yy",
         "valor_frete": "0.00",
-        "tipo_frete": null,
+        "tipo_frete": "Padrão",
         "prazo_entrega": null,
         "codigo_frete": null
     }
