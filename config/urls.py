@@ -168,7 +168,7 @@ urlpatterns = [
     ),
 
     # --------------------------------------------------------------------------
-    # 🔐 INÍCIO DAS ALTERAÇÕES: RECUPERAÇÃO DE SENHA NATIVA DO DJANGO
+    # 🔐 RECUPERAÇÃO DE SENHA NATIVA DO DJANGO
     # --------------------------------------------------------------------------
     path(
         'reset_password/', 
@@ -190,9 +190,6 @@ urlpatterns = [
         auth_views.PasswordResetCompleteView.as_view(template_name='accounts/password_reset_complete.html'), 
         name='password_reset_complete'
     ),
-    # --------------------------------------------------------------------------
-    # 🔐 FIM DAS ALTERAÇÕES
-    # --------------------------------------------------------------------------
 
     # PAINEL
     path(
@@ -214,8 +211,6 @@ urlpatterns = [
     ),
 ]
 
-if settings.DEBUG:
-    urlpatterns += static(
-        settings.MEDIA_URL,
-        document_root=settings.MEDIA_ROOT
-    )
+# Libera serviço de Mídia e Estáticos sem depender do modo DEBUG
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
