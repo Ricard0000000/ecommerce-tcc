@@ -1,2054 +1,2054 @@
 [
-{
-    "model": "auth.user",
-    "fields": {
-        "password": "pbkdf2_sha256$1200000$RpY7tCG2qWylaPHY28qMfO$qTlgKawNyRmjIr1HjSldO3yvcAtBEgpcB7jHirZ9OYY=",
-        "last_login": "2026-07-06T13:08:43.297Z",
-        "is_superuser": true,
-        "username": "admin",
-        "first_name": "",
-        "last_name": "",
-        "email": "95ricard0.c0rrea@gmail.com",
-        "is_staff": true,
-        "is_active": true,
-        "date_joined": "2026-05-11T14:33:11.673Z",
-        "groups": [],
-        "user_permissions": []
+    {
+        "model": "auth.user",
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$RpY7tCG2qWylaPHY28qMfO$qTlgKawNyRmjIr1HjSldO3yvcAtBEgpcB7jHirZ9OYY=",
+            "last_login": "2026-07-06T13:08:43.297Z",
+            "is_superuser": true,
+            "username": "admin",
+            "first_name": "",
+            "last_name": "",
+            "email": "95ricard0.c0rrea@gmail.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2026-05-11T14:33:11.673Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$IDUmDOJNw3DE8j17hFn97N$P7kODDGn7maSaSIVlP6XRn3W6TbB2OhgSLqdwt0l43Q=",
+            "last_login": "2026-06-11T12:47:51.081Z",
+            "is_superuser": false,
+            "username": "cliente1",
+            "first_name": "",
+            "last_name": "",
+            "email": "teste@teste.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2026-05-25T20:45:55.478Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$sZkm2SqOyulAHm44c0JN3f$zex7z/Hb1ZFaJ7j6yfG4OdVr4l8qxHOAE+2ubc7Yvx4=",
+            "last_login": "2026-05-28T16:41:14.431Z",
+            "is_superuser": false,
+            "username": "usuarioBonsai",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2026-05-28T16:40:58.641Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$aa6ieOZCoefHhA79FGIJFW$+LgCQjK0O+M7o2u1L9CfmeYCvUG3BEK1Pi0n8EV3PDc=",
+            "last_login": "2026-06-23T19:43:21.775Z",
+            "is_superuser": false,
+            "username": "marilia",
+            "first_name": "",
+            "last_name": "",
+            "email": "mariliabelan@yahoo.com.br",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2026-06-09T11:44:46.367Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$G5Sq9DKkwtKLdJ1RP2Mh6r$pjfpZLfWT4G5grBS+yoO2Z/h04fRIrqXqJVuue0I2A8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "doidinho",
+            "first_name": "",
+            "last_name": "",
+            "email": "ricardobcv@outlook.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2026-07-06T00:42:17.052Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$JSwFHmyzDIve8wGD5IStnz$7V34W1HpnNRtxpB94UL8DjtQ8/nSw1QDJYfuPgLJ9l8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "manoRicks",
+            "first_name": "",
+            "last_name": "",
+            "email": "ricardo.1234134@discente.uemg.br",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2026-07-06T00:55:15.988Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "9ttsveq96oxey6oy29e4tn6j7xs34fkp",
+        "fields": {
+            "session_data": ".eJxVjMsOgyAQAP9lzw1hwRcee-83mF0Wim0DCerJ-O-NiRevM5PZwVOtc04Fxv14wETbmqZtCXWaBUZAuDEm_w35FPKh_C7Kl7zWmdWZqMsu6lUk_J5XexskWhKMEJ1wbDqm4GhwQ4eo-wYZLXprOTYcDKPjwL41JmrDbaut1xTFWJE-wPEHbiQ9bQ:1wgjch:9okftpd01iQQJA_vWlVck35ohunLN0eEob7iThyT2Y0",
+            "expire_date": "2026-07-20T13:44:35.997Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "j7jodnl4dv7gjdfmvhibda65l1nm3ibh",
+        "fields": {
+            "session_data": "eyJjYXJyaW5obyI6e319:1wtQBw:SZT9lbe96aDIp4xaYReQ5YnWJELJRl42be4_v4A3Aew",
+            "expire_date": "2026-08-24T13:37:24.802Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "nif60an2uymudr71gjynjf0iev6889mm",
+        "fields": {
+            "session_data": ".eJxVjMsOgyAQAP9lzw1hwRcee-83mF0Wim0DCerJ-O-NiRevM5PZwVOtc04Fxv14wETbmqZtCXWaBUZAuDEm_w35FPKh_C7Kl7zWmdWZqMsu6lUk_J5XexskWhKMEJ1wbDqm4GhwQ4eo-wYZLXprOTYcDKPjwL41JmrDbaut1xTFWJE-wPEHbiQ9bQ:1wc6pd:zBPpq7vEoR-cO-aqTlYO6N4Esjpx1jsHXdTzuehMNGY",
+            "expire_date": "2026-07-07T19:30:49.822Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "vjig6x1c07hp2w3ug3x9qs65c5gn55yk",
+        "fields": {
+            "session_data": ".eJxVjEEOgyAQAP-y54YUlF3x2LtvMMsKxbaBBPVk_Htj4sXrzGR2EK51zqlAvx8PGHlb07gtoY7zBD00cGOe5RvyKaYP53dRUvJaZ6_ORF12UUOZwu91tbdB4iVBD7pzETunRbxDLdF6whaNNYZRyBgkidQSMjkjT-Osi61ufOAYLJMnOP4_3jxa:1wUs4M:UnO7iPe8JelbS66MG7agwodEf3fIC7QTb-kwsJKL4g8",
+            "expire_date": "2026-06-17T20:20:06.111Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "xrt956l1w25eb4haifcdclcjyuhh27lw",
+        "fields": {
+            "session_data": ".eJxVjMsOgyAQAP9lzw1hwRcee-83mF0Wim0DCerJ-O-NiRevM5PZwVOtc04Fxv14wETbmqZtCXWaBUZAuDEm_w35FPKh_C7Kl7zWmdWZqMsu6lUk_J5XexskWhKMEJ1wbDqm4GhwQ4eo-wYZLXprOTYcDKPjwL41JmrDbaut1xTFWJE-wPEHbiQ9bQ:1wY2bh:gh0ZY8VXBmb3K4a_rj-BJHD_seoQunK8bX02lxd1jO4",
+            "expire_date": "2026-06-26T14:11:37.049Z"
+        }
+    },
+    {
+        "model": "produtos.categoria",
+        "pk": 1,
+        "fields": {
+            "nome": "Bonsai",
+            "imagem": "categorias/OIP.webp",
+            "destaque_home": true
+        }
+    },
+    {
+        "model": "produtos.categoria",
+        "pk": 2,
+        "fields": {
+            "nome": "Vasos",
+            "imagem": "categorias/5961619b-75d6-4ded-91b1-9081458aec57.png",
+            "destaque_home": true
+        }
+    },
+    {
+        "model": "produtos.categoria",
+        "pk": 3,
+        "fields": {
+            "nome": "Ferramentas",
+            "imagem": "categorias/baixados_5.jpg",
+            "destaque_home": false
+        }
+    },
+    {
+        "model": "produtos.produto",
+        "pk": 2,
+        "fields": {
+            "nome": "Accura Bonsai",
+            "descricao": "Bonsai JaponÛs 12 anos",
+            "preco": "500.00",
+            "estoque": 10,
+            "peso": "1.00",
+            "altura": "20.00",
+            "largura": "20.00",
+            "comprimento": "20.00",
+            "ativo": true,
+            "destaque_home": true,
+            "imagem": "produtos/3.jpg",
+            "categoria": 1
+        }
+    },
+    {
+        "model": "produtos.produto",
+        "pk": 3,
+        "fields": {
+            "nome": "Auto XXL Blue",
+            "descricao": "Bonsai da ┴sia Central 10 anos",
+            "preco": "600.00",
+            "estoque": 50,
+            "peso": "1.00",
+            "altura": "20.00",
+            "largura": "20.00",
+            "comprimento": "20.00",
+            "ativo": true,
+            "destaque_home": true,
+            "imagem": "produtos/2.jpg",
+            "categoria": 1
+        }
+    },
+    {
+        "model": "produtos.produto",
+        "pk": 4,
+        "fields": {
+            "nome": "24k",
+            "descricao": "Muito tricoma",
+            "preco": "550.00",
+            "estoque": 50,
+            "peso": "1.00",
+            "altura": "20.00",
+            "largura": "20.00",
+            "comprimento": "20.00",
+            "ativo": true,
+            "destaque_home": true,
+            "imagem": "produtos/1.jpg",
+            "categoria": 1
+        }
+    },
+    {
+        "model": "produtos.produto",
+        "pk": 5,
+        "fields": {
+            "nome": "Bonsai Chito",
+            "descricao": "Teste de pagamento",
+            "preco": "1.00",
+            "estoque": 50,
+            "peso": "1.00",
+            "altura": "20.00",
+            "largura": "20.00",
+            "comprimento": "20.00",
+            "ativo": true,
+            "destaque_home": true,
+            "imagem": "produtos/baixados_5.jpg",
+            "categoria": 1
+        }
+    },
+    {
+        "model": "produtos.produto",
+        "pk": 6,
+        "fields": {
+            "nome": "Bonsai Oriental",
+            "descricao": "Bonsai Oriental 16 anos",
+            "preco": "350.00",
+            "estoque": 70,
+            "peso": "7.00",
+            "altura": "70.00",
+            "largura": "50.00",
+            "comprimento": "50.00",
+            "ativo": true,
+            "destaque_home": true,
+            "imagem": "produtos/baixados_4.jpg",
+            "categoria": 1
+        }
+    },
+    {
+        "model": "produtos.produto",
+        "pk": 7,
+        "fields": {
+            "nome": "Bonsai Atenas Freak",
+            "descricao": "Bonsai Atenas Freak 19 anos \r\nFeito pelo Mestre Isumakiro",
+            "preco": "1000.00",
+            "estoque": 1,
+            "peso": "1.00",
+            "altura": "20.00",
+            "largura": "20.00",
+            "comprimento": "20.00",
+            "ativo": true,
+            "destaque_home": true,
+            "imagem": "produtos/baixados_6.jpg",
+            "categoria": 1
+        }
+    },
+    {
+        "model": "produtos.produto",
+        "pk": 8,
+        "fields": {
+            "nome": "Vaso oriental dragÒo",
+            "descricao": "Vaso de cerÔmica \r\n22cm de diametro",
+            "preco": "900.00",
+            "estoque": 50,
+            "peso": "1.00",
+            "altura": "20.00",
+            "largura": "20.00",
+            "comprimento": "20.00",
+            "ativo": true,
+            "destaque_home": true,
+            "imagem": "produtos/baixados_7.jpg",
+            "categoria": 2
+        }
+    },
+    {
+        "model": "produtos.banner",
+        "pk": 3,
+        "fields": {
+            "imagem": "banners/ChatGPT_Image_19_de_mai_trOdFLx._de_2026_10_42_13.png",
+            "ativo": true
+        }
+    },
+    {
+        "model": "produtos.pedido",
+        "pk": 36,
+        "fields": {
+            "usuario": [
+                "cliente1"
+            ],
+            "criado_em": "2026-06-11T12:48:34.804Z",
+            "total": "1.00",
+            "status": "pendente",
+            "mercadopago_id": "163632519444",
+            "nome_cliente": "yy",
+            "telefone": "yy",
+            "cep": "yy",
+            "cidade": "yy",
+            "endereco": "yy",
+            "numero": "yy",
+            "complemento": "yy",
+            "valor_frete": "0.00",
+            "tipo_frete": "Padrão",
+            "prazo_entrega": null,
+            "codigo_frete": null
+        }
+    },
+    {
+        "model": "produtos.pedido",
+        "pk": 37,
+        "fields": {
+            "usuario": [
+                "cliente1"
+            ],
+            "criado_em": "2026-06-11T17:03:38.309Z",
+            "total": "1.00",
+            "status": "pago",
+            "mercadopago_id": "163633940834",
+            "nome_cliente": "1",
+            "telefone": "1",
+            "cep": "1",
+            "cidade": "1",
+            "endereco": "1",
+            "numero": "1",
+            "complemento": "1",
+            "valor_frete": "0.00",
+            "tipo_frete": "Padrão",
+            "prazo_entrega": null,
+            "codigo_frete": null
+        }
+    },
+    {
+        "model": "produtos.pedido",
+        "pk": 38,
+        "fields": {
+            "usuario": [
+                "marilia"
+            ],
+            "criado_em": "2026-06-23T19:43:43.323Z",
+            "total": "1.00",
+            "status": "pendente",
+            "mercadopago_id": "165491726202",
+            "nome_cliente": "aa",
+            "telefone": "aa",
+            "cep": "36802046",
+            "cidade": "aa",
+            "endereco": "aa",
+            "numero": "aa",
+            "complemento": "aa",
+            "valor_frete": "0.00",
+            "tipo_frete": "Padrão",
+            "prazo_entrega": null,
+            "codigo_frete": null
+        }
+    },
+    {
+        "model": "produtos.itempedido",
+        "pk": 54,
+        "fields": {
+            "pedido": 36,
+            "produto": 5,
+            "preco": "1.00",
+            "quantidade": 1
+        }
+    },
+    {
+        "model": "produtos.itempedido",
+        "pk": 55,
+        "fields": {
+            "pedido": 37,
+            "produto": 5,
+            "preco": "1.00",
+            "quantidade": 1
+        }
+    },
+    {
+        "model": "produtos.itempedido",
+        "pk": 56,
+        "fields": {
+            "pedido": 38,
+            "produto": 5,
+            "preco": "1.00",
+            "quantidade": 1
+        }
+    },
+    {
+        "model": "produtos.melhorenviotoken",
+        "pk": 1,
+        "fields": {
+            "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODUyIiwianRpIjoiNTY5YTI2MjY0MTYyNjdiOWM2NjE2NmRjNzE4NmRiNGZhZDBlNTcxOTk4NjkzYTcxNGY1ZmUxMTI0ZmY0NzNmYTk0ZjNkOTBlY2Y5Njk5NTciLCJpYXQiOjE3ODIyMzk5NTQuNjkyOTczLCJuYmYiOjE3ODIyMzk5NTQuNjkyOTc2LCJleHAiOjE3ODQ4MzE5NTQuNjc0MzE4LCJzdWIiOiJhMjAxZjRiZS1kOWNiLTQ2YjktODU0NC01YzBmYTc4ODdiZjciLCJzY29wZXMiOltdfQ.kVnQjmcQc5c5Xw5jjZw5w2Eku3KErZBhVsW0mJffhIBMTDMaBw2Sh1KBB_3ILCVUt4bbJYq8fjUmb48UcxzSbM89vEV139oNrQqLYz-S3A_bXTa1AAk3n01B8qw0fiSu7xdh1dc31JILYen5sS-upDwq8pnh6V1_YgA7Kv3w7TZ_ReRdeHB5HB9Q8_soAkN6bq31IGNyZjEocKq7az9ypH7o0fQa3-S33W2M0uSD5PaHWmKNFJqfxviSrLmsLfQdtN14I8G2-nG4D6V1wQ1afmifoVrNmZ6aOpPDs9eKdqHvhcxD1rx09t899tZ-kFo5yG9Ts6Sq1B4M1_nTpin_pJhDQFrouGA13WR56FMHPsB8fNQI5YtAXF2XxkvUjN-QMJOLwWXh4NSGip1pSwlWdyq-lZGb-0ggw6vERZMw-P7W4hr8aunwDcDlposiOxoSnFbSIZds7BhSHJTYmf39QkSLDT6a3P72qkNusO58Qxb4sipidXOIBUjrXwXAArSMcS6rfaDehkiedSyb6WlrNvqL2uEOYDiB6EVfDcToMCc-Avvxz8EjLIhwBY2qCxRjuSql1HR7pDgALlarXSM8AVw3J_J-CNhVg54mxay4WFT-cJnvyd3caphxWWeQ1X1dBCU5O-8Ztx-Rg1_TmR2Zkfc4DBCS-93XyoF1EdPNp8g",
+            "refresh_token": "def5020003f232d3cdd821900609ffcd8d4a24703c446d5b060afeb0cbc83ec352e3d2ae50099c3e5806cff61454eaf2f53776350cb4eb0a16f34e6f246be50513255c5c2d071a9e62a639f7350ab722b595c606206d4669f0f6ade3a6b17afe66ce0635a969f80ee09a88f10818ebe21a63797e9fd0b4df90a72e8e1bbc50c47e405e6aacc77e9d77cfe6e0bdc7e217fcf758a71720b4fbccd762df8bb7570354e978f179f45cb22af0aa2172ac75ab8f70871b73b59cf5365af5f21435fcbe2d3c858071623cef0d6c697397e5bda1109fd3cc616a6b7f9cb35cc8a4a33e767b6ccd1f447360da45058f66e3275ed763b36432e2ae0a22d796380382e617f7253ced9a3a04e139a5aa51e1097c7810b5a7c803070ed6e7124de86789ed2848f00e345db90ba4074ec26389ba0be35fdacee34e75accbc2dbdd8a73ef199c13d419ab41ee5e62599c9416c6cbf90180f3833907af83d9beb0d5199b966fe60f22e6284b5f23196fb7f6f1f84537d0ccada54d5b4a51b9ac7dc5b331125fb40248c2c83d80b04c575f",
+            "updated_at": "2026-06-23T18:39:15.039Z"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 1,
+        "fields": {
+            "action_time": "2026-05-11T14:43:00.995Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "1",
+            "object_repr": "Camiseta",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 2,
+        "fields": {
+            "action_time": "2026-05-12T14:09:46.982Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "categoria"
+            ],
+            "object_id": "1",
+            "object_repr": "TÛnis",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 3,
+        "fields": {
+            "action_time": "2026-05-12T14:17:25.168Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "1",
+            "object_repr": "Camiseta",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 4,
+        "fields": {
+            "action_time": "2026-05-12T14:18:50.601Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "2",
+            "object_repr": "Nike Jordan Camuflado 42",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 5,
+        "fields": {
+            "action_time": "2026-05-12T14:22:59.239Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "categoria"
+            ],
+            "object_id": "1",
+            "object_repr": "Feminizadas",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Nome\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2026-05-12T14:23:33.710Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "2",
+            "object_repr": "White Widow",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Nome\", \"Descricao\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2026-05-12T16:37:32.759Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "categoria"
+            ],
+            "object_id": "2",
+            "object_repr": "Automßticas",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 8,
+        "fields": {
+            "action_time": "2026-05-12T16:38:08.282Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "3",
+            "object_repr": "Auto XXL Blue",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 9,
+        "fields": {
+            "action_time": "2026-05-12T16:38:54.469Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "3",
+            "object_repr": "Auto XXL Blue",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Categoria\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 10,
+        "fields": {
+            "action_time": "2026-05-12T16:51:30.191Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "3",
+            "object_repr": "Auto XXL Blue",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Imagem\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 11,
+        "fields": {
+            "action_time": "2026-05-12T16:52:51.332Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "2",
+            "object_repr": "White Widow",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Imagem\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 12,
+        "fields": {
+            "action_time": "2026-05-12T16:53:09.635Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "3",
+            "object_repr": "Auto XXL Blue",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 13,
+        "fields": {
+            "action_time": "2026-05-19T13:46:41.866Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "banner"
+            ],
+            "object_id": "1",
+            "object_repr": "banner principal",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 14,
+        "fields": {
+            "action_time": "2026-05-19T17:25:32.424Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "banner"
+            ],
+            "object_id": "1",
+            "object_repr": "Banner 1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 15,
+        "fields": {
+            "action_time": "2026-05-19T17:25:41.792Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "banner"
+            ],
+            "object_id": "2",
+            "object_repr": "Banner 2",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 16,
+        "fields": {
+            "action_time": "2026-05-19T17:27:55.489Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "banner"
+            ],
+            "object_id": "2",
+            "object_repr": "Banner 2",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 17,
+        "fields": {
+            "action_time": "2026-05-19T17:28:04.146Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "banner"
+            ],
+            "object_id": "3",
+            "object_repr": "Banner 3",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 18,
+        "fields": {
+            "action_time": "2026-05-19T17:53:03.661Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "4",
+            "object_repr": "24k",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 19,
+        "fields": {
+            "action_time": "2026-05-19T17:53:30.110Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "4",
+            "object_repr": "24k",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Imagem\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 20,
+        "fields": {
+            "action_time": "2026-05-20T01:37:14.905Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "categoria"
+            ],
+            "object_id": "2",
+            "object_repr": "Interior",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Nome\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 21,
+        "fields": {
+            "action_time": "2026-05-20T01:37:23.277Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "categoria"
+            ],
+            "object_id": "1",
+            "object_repr": "Exterior",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Nome\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 22,
+        "fields": {
+            "action_time": "2026-05-20T01:39:03.420Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "categoria"
+            ],
+            "object_id": "1",
+            "object_repr": "Bonsai",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Nome\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 23,
+        "fields": {
+            "action_time": "2026-05-20T01:39:10.648Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "categoria"
+            ],
+            "object_id": "2",
+            "object_repr": "Vasos",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Nome\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 24,
+        "fields": {
+            "action_time": "2026-05-20T01:45:49.948Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "4",
+            "object_repr": "24k",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Imagem\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 25,
+        "fields": {
+            "action_time": "2026-05-20T01:46:11.668Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "3",
+            "object_repr": "Auto XXL Blue",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Imagem\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 26,
+        "fields": {
+            "action_time": "2026-05-20T01:46:49.339Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "2",
+            "object_repr": "White Widow",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Imagem\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 27,
+        "fields": {
+            "action_time": "2026-05-20T01:48:32.310Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "categoria"
+            ],
+            "object_id": "3",
+            "object_repr": "Ferramentas",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 28,
+        "fields": {
+            "action_time": "2026-06-04T18:23:45.663Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "20",
+            "object_repr": "Pedido #20 - cliente1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 29,
+        "fields": {
+            "action_time": "2026-06-04T18:24:13.355Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "17",
+            "object_repr": "Pedido #17 - cliente1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 30,
+        "fields": {
+            "action_time": "2026-06-04T18:24:13.355Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "16",
+            "object_repr": "Pedido #16 - cliente1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 31,
+        "fields": {
+            "action_time": "2026-06-04T18:24:13.355Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "15",
+            "object_repr": "Pedido #15 - usuarioBonsai",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 32,
+        "fields": {
+            "action_time": "2026-06-04T18:24:13.355Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "14",
+            "object_repr": "Pedido #14 - usuarioBonsai",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 33,
+        "fields": {
+            "action_time": "2026-06-04T18:24:13.355Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "13",
+            "object_repr": "Pedido #13 - usuarioBonsai",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 34,
+        "fields": {
+            "action_time": "2026-06-04T18:24:13.355Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "12",
+            "object_repr": "Pedido #12 - cliente1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 35,
+        "fields": {
+            "action_time": "2026-06-04T18:24:13.356Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "11",
+            "object_repr": "Pedido #11 - cliente1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 36,
+        "fields": {
+            "action_time": "2026-06-04T18:24:13.356Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "8",
+            "object_repr": "Pedido #8 - cliente1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 37,
+        "fields": {
+            "action_time": "2026-06-04T18:24:13.356Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "7",
+            "object_repr": "Pedido #7 - cliente1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 38,
+        "fields": {
+            "action_time": "2026-06-04T18:24:13.356Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "6",
+            "object_repr": "Pedido #6 - cliente1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 39,
+        "fields": {
+            "action_time": "2026-06-04T18:24:13.356Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "5",
+            "object_repr": "Pedido #5 - cliente1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 40,
+        "fields": {
+            "action_time": "2026-06-04T18:24:13.356Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "4",
+            "object_repr": "Pedido #4 - cliente1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 41,
+        "fields": {
+            "action_time": "2026-06-04T18:24:13.356Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "3",
+            "object_repr": "Pedido #3 - cliente1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 42,
+        "fields": {
+            "action_time": "2026-06-04T18:24:13.356Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "2",
+            "object_repr": "Pedido #2 - cliente1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 43,
+        "fields": {
+            "action_time": "2026-06-11T12:47:32.086Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "5",
+            "object_repr": "Bonsai Chito",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 44,
+        "fields": {
+            "action_time": "2026-06-24T13:31:49.065Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "35",
+            "object_repr": "Pedido #35 - cliente1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 45,
+        "fields": {
+            "action_time": "2026-06-24T13:31:49.065Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "34",
+            "object_repr": "Pedido #34 - cliente1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 46,
+        "fields": {
+            "action_time": "2026-06-24T13:32:03.538Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "28",
+            "object_repr": "Pedido #28 - marilia",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 47,
+        "fields": {
+            "action_time": "2026-06-24T13:32:03.538Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "27",
+            "object_repr": "Pedido #27 - marilia",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 48,
+        "fields": {
+            "action_time": "2026-06-24T13:32:03.538Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "26",
+            "object_repr": "Pedido #26 - cliente1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 49,
+        "fields": {
+            "action_time": "2026-06-24T13:32:03.539Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "25",
+            "object_repr": "Pedido #25 - cliente1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 50,
+        "fields": {
+            "action_time": "2026-06-24T13:32:03.539Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "24",
+            "object_repr": "Pedido #24 - cliente1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 51,
+        "fields": {
+            "action_time": "2026-06-24T13:32:03.539Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "23",
+            "object_repr": "Pedido #23 - cliente1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 52,
+        "fields": {
+            "action_time": "2026-06-24T13:32:03.539Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "22",
+            "object_repr": "Pedido #22 - cliente1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 53,
+        "fields": {
+            "action_time": "2026-06-24T13:32:19.969Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "33",
+            "object_repr": "Pedido #33 - cliente1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 54,
+        "fields": {
+            "action_time": "2026-06-24T13:32:19.969Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "32",
+            "object_repr": "Pedido #32 - cliente1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 55,
+        "fields": {
+            "action_time": "2026-06-24T13:32:19.969Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "31",
+            "object_repr": "Pedido #31 - cliente1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 56,
+        "fields": {
+            "action_time": "2026-06-24T13:32:19.969Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "30",
+            "object_repr": "Pedido #30 - marilia",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 57,
+        "fields": {
+            "action_time": "2026-06-24T13:32:19.969Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "29",
+            "object_repr": "Pedido #29 - marilia",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 58,
+        "fields": {
+            "action_time": "2026-06-24T13:32:19.969Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "21",
+            "object_repr": "Pedido #21 - cliente1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 59,
+        "fields": {
+            "action_time": "2026-06-24T13:32:19.969Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "19",
+            "object_repr": "Pedido #19 - cliente1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 60,
+        "fields": {
+            "action_time": "2026-06-24T13:32:19.969Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "18",
+            "object_repr": "Pedido #18 - usuarioBonsai",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 61,
+        "fields": {
+            "action_time": "2026-06-24T13:32:19.969Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "10",
+            "object_repr": "Pedido #10 - cliente1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 62,
+        "fields": {
+            "action_time": "2026-06-24T13:32:19.969Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "9",
+            "object_repr": "Pedido #9 - cliente1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 63,
+        "fields": {
+            "action_time": "2026-06-24T13:32:19.969Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "pedido"
+            ],
+            "object_id": "1",
+            "object_repr": "Pedido #1 - cliente1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 64,
+        "fields": {
+            "action_time": "2026-06-24T18:09:16.960Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "2",
+            "object_repr": "Accura Bonsai",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Nome\", \"Descricao\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 65,
+        "fields": {
+            "action_time": "2026-06-24T18:09:45.814Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "3",
+            "object_repr": "Auto XXL Blue",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Descricao\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 66,
+        "fields": {
+            "action_time": "2026-06-24T18:10:32.750Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "3",
+            "object_repr": "Auto XXL Blue",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Categoria\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 67,
+        "fields": {
+            "action_time": "2026-06-25T03:53:37.654Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "6",
+            "object_repr": "Bonsai Oriental",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 68,
+        "fields": {
+            "action_time": "2026-06-25T03:54:20.698Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "6",
+            "object_repr": "Bonsai Oriental",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Imagem\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 69,
+        "fields": {
+            "action_time": "2026-06-25T03:54:51.568Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "6",
+            "object_repr": "Bonsai Oriental",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Imagem\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 70,
+        "fields": {
+            "action_time": "2026-06-25T03:59:23.606Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "7",
+            "object_repr": "Bonsai Atenas Freak",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 71,
+        "fields": {
+            "action_time": "2026-06-25T03:59:48.531Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "7",
+            "object_repr": "Bonsai Atenas Freak",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Imagem\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 72,
+        "fields": {
+            "action_time": "2026-06-25T04:00:27.193Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "7",
+            "object_repr": "Bonsai Atenas Freak",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Imagem\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 73,
+        "fields": {
+            "action_time": "2026-07-06T13:09:56.766Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "categoria"
+            ],
+            "object_id": "1",
+            "object_repr": "Bonsai",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Exibir na Home?\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 74,
+        "fields": {
+            "action_time": "2026-07-06T13:10:18.104Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "categoria"
+            ],
+            "object_id": "1",
+            "object_repr": "Bonsai",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 75,
+        "fields": {
+            "action_time": "2026-07-06T13:18:12.979Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "8",
+            "object_repr": "Vaso oriental dragÒo",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 76,
+        "fields": {
+            "action_time": "2026-07-06T13:20:04.980Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "8",
+            "object_repr": "Vaso oriental dragÒo",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Imagem\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 77,
+        "fields": {
+            "action_time": "2026-07-06T13:20:33.125Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "5",
+            "object_repr": "Bonsai Chito",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Destacar na Home?\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 78,
+        "fields": {
+            "action_time": "2026-07-06T13:30:42.412Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "categoria"
+            ],
+            "object_id": "2",
+            "object_repr": "Vasos",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Exibir na Home?\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 79,
+        "fields": {
+            "action_time": "2026-07-06T13:31:01.940Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "8",
+            "object_repr": "Vaso oriental dragÒo",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Destacar na Home?\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 80,
+        "fields": {
+            "action_time": "2026-07-06T13:32:26.134Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "8",
+            "object_repr": "Vaso oriental dragÒo",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 81,
+        "fields": {
+            "action_time": "2026-07-06T13:36:48.393Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "8",
+            "object_repr": "Vaso oriental dragÒo",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Categoria\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 82,
+        "fields": {
+            "action_time": "2026-07-06T13:37:42.933Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "categoria"
+            ],
+            "object_id": "2",
+            "object_repr": "Vasos",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Exibir na Home?\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 83,
+        "fields": {
+            "action_time": "2026-07-06T13:37:55.248Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "categoria"
+            ],
+            "object_id": "2",
+            "object_repr": "Vasos",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Exibir na Home?\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 84,
+        "fields": {
+            "action_time": "2026-07-06T13:38:06.649Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "8",
+            "object_repr": "Vaso oriental dragÒo",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Destacar na Home?\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 85,
+        "fields": {
+            "action_time": "2026-07-06T13:43:38.573Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "7",
+            "object_repr": "Bonsai Atenas Freak",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Exibir na Home?\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 86,
+        "fields": {
+            "action_time": "2026-07-06T13:43:47.462Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "6",
+            "object_repr": "Bonsai Oriental",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Exibir na Home?\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 87,
+        "fields": {
+            "action_time": "2026-07-06T13:43:52.701Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "5",
+            "object_repr": "Bonsai Chito",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Exibir na Home?\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 88,
+        "fields": {
+            "action_time": "2026-07-06T13:44:05.466Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "4",
+            "object_repr": "24k",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Exibir na Home?\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 89,
+        "fields": {
+            "action_time": "2026-07-06T13:44:10.041Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "3",
+            "object_repr": "Auto XXL Blue",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Exibir na Home?\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 90,
+        "fields": {
+            "action_time": "2026-07-06T13:44:14.360Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "2",
+            "object_repr": "Accura Bonsai",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Exibir na Home?\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 91,
+        "fields": {
+            "action_time": "2026-07-06T13:44:32.600Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "produtos",
+                "produto"
+            ],
+            "object_id": "8",
+            "object_repr": "Vaso oriental dragÒo",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Exibir na Home?\"]}}]"
+        }
     }
-},
-{
-    "model": "auth.user",
-    "fields": {
-        "password": "pbkdf2_sha256$1200000$IDUmDOJNw3DE8j17hFn97N$P7kODDGn7maSaSIVlP6XRn3W6TbB2OhgSLqdwt0l43Q=",
-        "last_login": "2026-06-11T12:47:51.081Z",
-        "is_superuser": false,
-        "username": "cliente1",
-        "first_name": "",
-        "last_name": "",
-        "email": "teste@teste.com",
-        "is_staff": false,
-        "is_active": true,
-        "date_joined": "2026-05-25T20:45:55.478Z",
-        "groups": [],
-        "user_permissions": []
-    }
-},
-{
-    "model": "auth.user",
-    "fields": {
-        "password": "pbkdf2_sha256$1200000$sZkm2SqOyulAHm44c0JN3f$zex7z/Hb1ZFaJ7j6yfG4OdVr4l8qxHOAE+2ubc7Yvx4=",
-        "last_login": "2026-05-28T16:41:14.431Z",
-        "is_superuser": false,
-        "username": "usuarioBonsai",
-        "first_name": "",
-        "last_name": "",
-        "email": "",
-        "is_staff": false,
-        "is_active": true,
-        "date_joined": "2026-05-28T16:40:58.641Z",
-        "groups": [],
-        "user_permissions": []
-    }
-},
-{
-    "model": "auth.user",
-    "fields": {
-        "password": "pbkdf2_sha256$1200000$aa6ieOZCoefHhA79FGIJFW$+LgCQjK0O+M7o2u1L9CfmeYCvUG3BEK1Pi0n8EV3PDc=",
-        "last_login": "2026-06-23T19:43:21.775Z",
-        "is_superuser": false,
-        "username": "marilia",
-        "first_name": "",
-        "last_name": "",
-        "email": "mariliabelan@yahoo.com.br",
-        "is_staff": false,
-        "is_active": true,
-        "date_joined": "2026-06-09T11:44:46.367Z",
-        "groups": [],
-        "user_permissions": []
-    }
-},
-{
-    "model": "auth.user",
-    "fields": {
-        "password": "pbkdf2_sha256$1200000$G5Sq9DKkwtKLdJ1RP2Mh6r$pjfpZLfWT4G5grBS+yoO2Z/h04fRIrqXqJVuue0I2A8=",
-        "last_login": null,
-        "is_superuser": false,
-        "username": "doidinho",
-        "first_name": "",
-        "last_name": "",
-        "email": "ricardobcv@outlook.com",
-        "is_staff": false,
-        "is_active": true,
-        "date_joined": "2026-07-06T00:42:17.052Z",
-        "groups": [],
-        "user_permissions": []
-    }
-},
-{
-    "model": "auth.user",
-    "fields": {
-        "password": "pbkdf2_sha256$1200000$JSwFHmyzDIve8wGD5IStnz$7V34W1HpnNRtxpB94UL8DjtQ8/nSw1QDJYfuPgLJ9l8=",
-        "last_login": null,
-        "is_superuser": false,
-        "username": "manoRicks",
-        "first_name": "",
-        "last_name": "",
-        "email": "ricardo.1234134@discente.uemg.br",
-        "is_staff": false,
-        "is_active": true,
-        "date_joined": "2026-07-06T00:55:15.988Z",
-        "groups": [],
-        "user_permissions": []
-    }
-},
-{
-    "model": "sessions.session",
-    "pk": "9ttsveq96oxey6oy29e4tn6j7xs34fkp",
-    "fields": {
-        "session_data": ".eJxVjMsOgyAQAP9lzw1hwRcee-83mF0Wim0DCerJ-O-NiRevM5PZwVOtc04Fxv14wETbmqZtCXWaBUZAuDEm_w35FPKh_C7Kl7zWmdWZqMsu6lUk_J5XexskWhKMEJ1wbDqm4GhwQ4eo-wYZLXprOTYcDKPjwL41JmrDbaut1xTFWJE-wPEHbiQ9bQ:1wgjch:9okftpd01iQQJA_vWlVck35ohunLN0eEob7iThyT2Y0",
-        "expire_date": "2026-07-20T13:44:35.997Z"
-    }
-},
-{
-    "model": "sessions.session",
-    "pk": "j7jodnl4dv7gjdfmvhibda65l1nm3ibh",
-    "fields": {
-        "session_data": "eyJjYXJyaW5obyI6e319:1wtQBw:SZT9lbe96aDIp4xaYReQ5YnWJELJRl42be4_v4A3Aew",
-        "expire_date": "2026-08-24T13:37:24.802Z"
-    }
-},
-{
-    "model": "sessions.session",
-    "pk": "nif60an2uymudr71gjynjf0iev6889mm",
-    "fields": {
-        "session_data": ".eJxVjMsOgyAQAP9lzw1hwRcee-83mF0Wim0DCerJ-O-NiRevM5PZwVOtc04Fxv14wETbmqZtCXWaBUZAuDEm_w35FPKh_C7Kl7zWmdWZqMsu6lUk_J5XexskWhKMEJ1wbDqm4GhwQ4eo-wYZLXprOTYcDKPjwL41JmrDbaut1xTFWJE-wPEHbiQ9bQ:1wc6pd:zBPpq7vEoR-cO-aqTlYO6N4Esjpx1jsHXdTzuehMNGY",
-        "expire_date": "2026-07-07T19:30:49.822Z"
-    }
-},
-{
-    "model": "sessions.session",
-    "pk": "vjig6x1c07hp2w3ug3x9qs65c5gn55yk",
-    "fields": {
-        "session_data": ".eJxVjEEOgyAQAP-y54YUlF3x2LtvMMsKxbaBBPVk_Htj4sXrzGR2EK51zqlAvx8PGHlb07gtoY7zBD00cGOe5RvyKaYP53dRUvJaZ6_ORF12UUOZwu91tbdB4iVBD7pzETunRbxDLdF6whaNNYZRyBgkidQSMjkjT-Osi61ufOAYLJMnOP4_3jxa:1wUs4M:UnO7iPe8JelbS66MG7agwodEf3fIC7QTb-kwsJKL4g8",
-        "expire_date": "2026-06-17T20:20:06.111Z"
-    }
-},
-{
-    "model": "sessions.session",
-    "pk": "xrt956l1w25eb4haifcdclcjyuhh27lw",
-    "fields": {
-        "session_data": ".eJxVjMsOgyAQAP9lzw1hwRcee-83mF0Wim0DCerJ-O-NiRevM5PZwVOtc04Fxv14wETbmqZtCXWaBUZAuDEm_w35FPKh_C7Kl7zWmdWZqMsu6lUk_J5XexskWhKMEJ1wbDqm4GhwQ4eo-wYZLXprOTYcDKPjwL41JmrDbaut1xTFWJE-wPEHbiQ9bQ:1wY2bh:gh0ZY8VXBmb3K4a_rj-BJHD_seoQunK8bX02lxd1jO4",
-        "expire_date": "2026-06-26T14:11:37.049Z"
-    }
-},
-{
-    "model": "produtos.categoria",
-    "pk": 1,
-    "fields": {
-        "nome": "Bonsai",
-        "imagem": "categorias/OIP.webp",
-        "destaque_home": true
-    }
-},
-{
-    "model": "produtos.categoria",
-    "pk": 2,
-    "fields": {
-        "nome": "Vasos",
-        "imagem": "categorias/5961619b-75d6-4ded-91b1-9081458aec57.png",
-        "destaque_home": true
-    }
-},
-{
-    "model": "produtos.categoria",
-    "pk": 3,
-    "fields": {
-        "nome": "Ferramentas",
-        "imagem": "categorias/baixados_5.jpg",
-        "destaque_home": false
-    }
-},
-{
-    "model": "produtos.produto",
-    "pk": 2,
-    "fields": {
-        "nome": "Accura Bonsai",
-        "descricao": "Bonsai JaponÛs 12 anos",
-        "preco": "500.00",
-        "estoque": 10,
-        "peso": "1.00",
-        "altura": "20.00",
-        "largura": "20.00",
-        "comprimento": "20.00",
-        "ativo": true,
-        "destaque_home": true,
-        "imagem": "produtos/3.jpg",
-        "categoria": 1
-    }
-},
-{
-    "model": "produtos.produto",
-    "pk": 3,
-    "fields": {
-        "nome": "Auto XXL Blue",
-        "descricao": "Bonsai da ┴sia Central 10 anos",
-        "preco": "600.00",
-        "estoque": 50,
-        "peso": "1.00",
-        "altura": "20.00",
-        "largura": "20.00",
-        "comprimento": "20.00",
-        "ativo": true,
-        "destaque_home": true,
-        "imagem": "produtos/2.jpg",
-        "categoria": 1
-    }
-},
-{
-    "model": "produtos.produto",
-    "pk": 4,
-    "fields": {
-        "nome": "24k",
-        "descricao": "Muito tricoma",
-        "preco": "550.00",
-        "estoque": 50,
-        "peso": "1.00",
-        "altura": "20.00",
-        "largura": "20.00",
-        "comprimento": "20.00",
-        "ativo": true,
-        "destaque_home": true,
-        "imagem": "produtos/1.jpg",
-        "categoria": 1
-    }
-},
-{
-    "model": "produtos.produto",
-    "pk": 5,
-    "fields": {
-        "nome": "Bonsai Chito",
-        "descricao": "Teste de pagamento",
-        "preco": "1.00",
-        "estoque": 50,
-        "peso": "1.00",
-        "altura": "20.00",
-        "largura": "20.00",
-        "comprimento": "20.00",
-        "ativo": true,
-        "destaque_home": true,
-        "imagem": "produtos/baixados_5.jpg",
-        "categoria": 1
-    }
-},
-{
-    "model": "produtos.produto",
-    "pk": 6,
-    "fields": {
-        "nome": "Bonsai Oriental",
-        "descricao": "Bonsai Oriental 16 anos",
-        "preco": "350.00",
-        "estoque": 70,
-        "peso": "7.00",
-        "altura": "70.00",
-        "largura": "50.00",
-        "comprimento": "50.00",
-        "ativo": true,
-        "destaque_home": true,
-        "imagem": "produtos/baixados_4.jpg",
-        "categoria": 1
-    }
-},
-{
-    "model": "produtos.produto",
-    "pk": 7,
-    "fields": {
-        "nome": "Bonsai Atenas Freak",
-        "descricao": "Bonsai Atenas Freak 19 anos \r\nFeito pelo Mestre Isumakiro",
-        "preco": "1000.00",
-        "estoque": 1,
-        "peso": "1.00",
-        "altura": "20.00",
-        "largura": "20.00",
-        "comprimento": "20.00",
-        "ativo": true,
-        "destaque_home": true,
-        "imagem": "produtos/baixados_6.jpg",
-        "categoria": 1
-    }
-},
-{
-    "model": "produtos.produto",
-    "pk": 8,
-    "fields": {
-        "nome": "Vaso oriental dragÒo",
-        "descricao": "Vaso de cerÔmica \r\n22cm de diametro",
-        "preco": "900.00",
-        "estoque": 50,
-        "peso": "1.00",
-        "altura": "20.00",
-        "largura": "20.00",
-        "comprimento": "20.00",
-        "ativo": true,
-        "destaque_home": true,
-        "imagem": "produtos/baixados_7.jpg",
-        "categoria": 2
-    }
-},
-{
-    "model": "produtos.banner",
-    "pk": 3,
-    "fields": {
-        "imagem": "banners/ChatGPT_Image_19_de_mai_trOdFLx._de_2026_10_42_13.png",
-        "ativo": true
-    }
-},
-{
-    "model": "produtos.pedido",
-    "pk": 36,
-    "fields": {
-        "usuario": [
-            "cliente1"
-        ],
-        "criado_em": "2026-06-11T12:48:34.804Z",
-        "total": "1.00",
-        "status": "pendente",
-        "mercadopago_id": "163632519444",
-        "nome_cliente": "yy",
-        "telefone": "yy",
-        "cep": "yy",
-        "cidade": "yy",
-        "endereco": "yy",
-        "numero": "yy",
-        "complemento": "yy",
-        "valor_frete": "0.00",
-        "tipo_frete": "Padrão",
-        "prazo_entrega": null,
-        "codigo_frete": null
-    }
-},
-{
-    "model": "produtos.pedido",
-    "pk": 37,
-    "fields": {
-        "usuario": [
-            "cliente1"
-        ],
-        "criado_em": "2026-06-11T17:03:38.309Z",
-        "total": "1.00",
-        "status": "pago",
-        "mercadopago_id": "163633940834",
-        "nome_cliente": "1",
-        "telefone": "1",
-        "cep": "1",
-        "cidade": "1",
-        "endereco": "1",
-        "numero": "1",
-        "complemento": "1",
-        "valor_frete": "0.00",
-        "tipo_frete": null,
-        "prazo_entrega": null,
-        "codigo_frete": null
-    }
-},
-{
-    "model": "produtos.pedido",
-    "pk": 38,
-    "fields": {
-        "usuario": [
-            "marilia"
-        ],
-        "criado_em": "2026-06-23T19:43:43.323Z",
-        "total": "1.00",
-        "status": "pendente",
-        "mercadopago_id": "165491726202",
-        "nome_cliente": "aa",
-        "telefone": "aa",
-        "cep": "36802046",
-        "cidade": "aa",
-        "endereco": "aa",
-        "numero": "aa",
-        "complemento": "aa",
-        "valor_frete": "0.00",
-        "tipo_frete": "",
-        "prazo_entrega": null,
-        "codigo_frete": null
-    }
-},
-{
-    "model": "produtos.itempedido",
-    "pk": 54,
-    "fields": {
-        "pedido": 36,
-        "produto": 5,
-        "preco": "1.00",
-        "quantidade": 1
-    }
-},
-{
-    "model": "produtos.itempedido",
-    "pk": 55,
-    "fields": {
-        "pedido": 37,
-        "produto": 5,
-        "preco": "1.00",
-        "quantidade": 1
-    }
-},
-{
-    "model": "produtos.itempedido",
-    "pk": 56,
-    "fields": {
-        "pedido": 38,
-        "produto": 5,
-        "preco": "1.00",
-        "quantidade": 1
-    }
-},
-{
-    "model": "produtos.melhorenviotoken",
-    "pk": 1,
-    "fields": {
-        "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODUyIiwianRpIjoiNTY5YTI2MjY0MTYyNjdiOWM2NjE2NmRjNzE4NmRiNGZhZDBlNTcxOTk4NjkzYTcxNGY1ZmUxMTI0ZmY0NzNmYTk0ZjNkOTBlY2Y5Njk5NTciLCJpYXQiOjE3ODIyMzk5NTQuNjkyOTczLCJuYmYiOjE3ODIyMzk5NTQuNjkyOTc2LCJleHAiOjE3ODQ4MzE5NTQuNjc0MzE4LCJzdWIiOiJhMjAxZjRiZS1kOWNiLTQ2YjktODU0NC01YzBmYTc4ODdiZjciLCJzY29wZXMiOltdfQ.kVnQjmcQc5c5Xw5jjZw5w2Eku3KErZBhVsW0mJffhIBMTDMaBw2Sh1KBB_3ILCVUt4bbJYq8fjUmb48UcxzSbM89vEV139oNrQqLYz-S3A_bXTa1AAk3n01B8qw0fiSu7xdh1dc31JILYen5sS-upDwq8pnh6V1_YgA7Kv3w7TZ_ReRdeHB5HB9Q8_soAkN6bq31IGNyZjEocKq7az9ypH7o0fQa3-S33W2M0uSD5PaHWmKNFJqfxviSrLmsLfQdtN14I8G2-nG4D6V1wQ1afmifoVrNmZ6aOpPDs9eKdqHvhcxD1rx09t899tZ-kFo5yG9Ts6Sq1B4M1_nTpin_pJhDQFrouGA13WR56FMHPsB8fNQI5YtAXF2XxkvUjN-QMJOLwWXh4NSGip1pSwlWdyq-lZGb-0ggw6vERZMw-P7W4hr8aunwDcDlposiOxoSnFbSIZds7BhSHJTYmf39QkSLDT6a3P72qkNusO58Qxb4sipidXOIBUjrXwXAArSMcS6rfaDehkiedSyb6WlrNvqL2uEOYDiB6EVfDcToMCc-Avvxz8EjLIhwBY2qCxRjuSql1HR7pDgALlarXSM8AVw3J_J-CNhVg54mxay4WFT-cJnvyd3caphxWWeQ1X1dBCU5O-8Ztx-Rg1_TmR2Zkfc4DBCS-93XyoF1EdPNp8g",
-        "refresh_token": "def5020003f232d3cdd821900609ffcd8d4a24703c446d5b060afeb0cbc83ec352e3d2ae50099c3e5806cff61454eaf2f53776350cb4eb0a16f34e6f246be50513255c5c2d071a9e62a639f7350ab722b595c606206d4669f0f6ade3a6b17afe66ce0635a969f80ee09a88f10818ebe21a63797e9fd0b4df90a72e8e1bbc50c47e405e6aacc77e9d77cfe6e0bdc7e217fcf758a71720b4fbccd762df8bb7570354e978f179f45cb22af0aa2172ac75ab8f70871b73b59cf5365af5f21435fcbe2d3c858071623cef0d6c697397e5bda1109fd3cc616a6b7f9cb35cc8a4a33e767b6ccd1f447360da45058f66e3275ed763b36432e2ae0a22d796380382e617f7253ced9a3a04e139a5aa51e1097c7810b5a7c803070ed6e7124de86789ed2848f00e345db90ba4074ec26389ba0be35fdacee34e75accbc2dbdd8a73ef199c13d419ab41ee5e62599c9416c6cbf90180f3833907af83d9beb0d5199b966fe60f22e6284b5f23196fb7f6f1f84537d0ccada54d5b4a51b9ac7dc5b331125fb40248c2c83d80b04c575f",
-        "updated_at": "2026-06-23T18:39:15.039Z"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 1,
-    "fields": {
-        "action_time": "2026-05-11T14:43:00.995Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "1",
-        "object_repr": "Camiseta",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 2,
-    "fields": {
-        "action_time": "2026-05-12T14:09:46.982Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "categoria"
-        ],
-        "object_id": "1",
-        "object_repr": "TÛnis",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 3,
-    "fields": {
-        "action_time": "2026-05-12T14:17:25.168Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "1",
-        "object_repr": "Camiseta",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 4,
-    "fields": {
-        "action_time": "2026-05-12T14:18:50.601Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "2",
-        "object_repr": "Nike Jordan Camuflado 42",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 5,
-    "fields": {
-        "action_time": "2026-05-12T14:22:59.239Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "categoria"
-        ],
-        "object_id": "1",
-        "object_repr": "Feminizadas",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Nome\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 6,
-    "fields": {
-        "action_time": "2026-05-12T14:23:33.710Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "2",
-        "object_repr": "White Widow",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Nome\", \"Descricao\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 7,
-    "fields": {
-        "action_time": "2026-05-12T16:37:32.759Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "categoria"
-        ],
-        "object_id": "2",
-        "object_repr": "Automßticas",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 8,
-    "fields": {
-        "action_time": "2026-05-12T16:38:08.282Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "3",
-        "object_repr": "Auto XXL Blue",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 9,
-    "fields": {
-        "action_time": "2026-05-12T16:38:54.469Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "3",
-        "object_repr": "Auto XXL Blue",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Categoria\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 10,
-    "fields": {
-        "action_time": "2026-05-12T16:51:30.191Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "3",
-        "object_repr": "Auto XXL Blue",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Imagem\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 11,
-    "fields": {
-        "action_time": "2026-05-12T16:52:51.332Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "2",
-        "object_repr": "White Widow",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Imagem\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 12,
-    "fields": {
-        "action_time": "2026-05-12T16:53:09.635Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "3",
-        "object_repr": "Auto XXL Blue",
-        "action_flag": 2,
-        "change_message": "[]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 13,
-    "fields": {
-        "action_time": "2026-05-19T13:46:41.866Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "banner"
-        ],
-        "object_id": "1",
-        "object_repr": "banner principal",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 14,
-    "fields": {
-        "action_time": "2026-05-19T17:25:32.424Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "banner"
-        ],
-        "object_id": "1",
-        "object_repr": "Banner 1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 15,
-    "fields": {
-        "action_time": "2026-05-19T17:25:41.792Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "banner"
-        ],
-        "object_id": "2",
-        "object_repr": "Banner 2",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 16,
-    "fields": {
-        "action_time": "2026-05-19T17:27:55.489Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "banner"
-        ],
-        "object_id": "2",
-        "object_repr": "Banner 2",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 17,
-    "fields": {
-        "action_time": "2026-05-19T17:28:04.146Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "banner"
-        ],
-        "object_id": "3",
-        "object_repr": "Banner 3",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 18,
-    "fields": {
-        "action_time": "2026-05-19T17:53:03.661Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "4",
-        "object_repr": "24k",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 19,
-    "fields": {
-        "action_time": "2026-05-19T17:53:30.110Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "4",
-        "object_repr": "24k",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Imagem\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 20,
-    "fields": {
-        "action_time": "2026-05-20T01:37:14.905Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "categoria"
-        ],
-        "object_id": "2",
-        "object_repr": "Interior",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Nome\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 21,
-    "fields": {
-        "action_time": "2026-05-20T01:37:23.277Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "categoria"
-        ],
-        "object_id": "1",
-        "object_repr": "Exterior",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Nome\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 22,
-    "fields": {
-        "action_time": "2026-05-20T01:39:03.420Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "categoria"
-        ],
-        "object_id": "1",
-        "object_repr": "Bonsai",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Nome\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 23,
-    "fields": {
-        "action_time": "2026-05-20T01:39:10.648Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "categoria"
-        ],
-        "object_id": "2",
-        "object_repr": "Vasos",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Nome\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 24,
-    "fields": {
-        "action_time": "2026-05-20T01:45:49.948Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "4",
-        "object_repr": "24k",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Imagem\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 25,
-    "fields": {
-        "action_time": "2026-05-20T01:46:11.668Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "3",
-        "object_repr": "Auto XXL Blue",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Imagem\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 26,
-    "fields": {
-        "action_time": "2026-05-20T01:46:49.339Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "2",
-        "object_repr": "White Widow",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Imagem\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 27,
-    "fields": {
-        "action_time": "2026-05-20T01:48:32.310Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "categoria"
-        ],
-        "object_id": "3",
-        "object_repr": "Ferramentas",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 28,
-    "fields": {
-        "action_time": "2026-06-04T18:23:45.663Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "20",
-        "object_repr": "Pedido #20 - cliente1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 29,
-    "fields": {
-        "action_time": "2026-06-04T18:24:13.355Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "17",
-        "object_repr": "Pedido #17 - cliente1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 30,
-    "fields": {
-        "action_time": "2026-06-04T18:24:13.355Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "16",
-        "object_repr": "Pedido #16 - cliente1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 31,
-    "fields": {
-        "action_time": "2026-06-04T18:24:13.355Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "15",
-        "object_repr": "Pedido #15 - usuarioBonsai",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 32,
-    "fields": {
-        "action_time": "2026-06-04T18:24:13.355Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "14",
-        "object_repr": "Pedido #14 - usuarioBonsai",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 33,
-    "fields": {
-        "action_time": "2026-06-04T18:24:13.355Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "13",
-        "object_repr": "Pedido #13 - usuarioBonsai",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 34,
-    "fields": {
-        "action_time": "2026-06-04T18:24:13.355Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "12",
-        "object_repr": "Pedido #12 - cliente1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 35,
-    "fields": {
-        "action_time": "2026-06-04T18:24:13.356Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "11",
-        "object_repr": "Pedido #11 - cliente1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 36,
-    "fields": {
-        "action_time": "2026-06-04T18:24:13.356Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "8",
-        "object_repr": "Pedido #8 - cliente1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 37,
-    "fields": {
-        "action_time": "2026-06-04T18:24:13.356Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "7",
-        "object_repr": "Pedido #7 - cliente1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 38,
-    "fields": {
-        "action_time": "2026-06-04T18:24:13.356Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "6",
-        "object_repr": "Pedido #6 - cliente1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 39,
-    "fields": {
-        "action_time": "2026-06-04T18:24:13.356Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "5",
-        "object_repr": "Pedido #5 - cliente1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 40,
-    "fields": {
-        "action_time": "2026-06-04T18:24:13.356Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "4",
-        "object_repr": "Pedido #4 - cliente1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 41,
-    "fields": {
-        "action_time": "2026-06-04T18:24:13.356Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "3",
-        "object_repr": "Pedido #3 - cliente1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 42,
-    "fields": {
-        "action_time": "2026-06-04T18:24:13.356Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "2",
-        "object_repr": "Pedido #2 - cliente1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 43,
-    "fields": {
-        "action_time": "2026-06-11T12:47:32.086Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "5",
-        "object_repr": "Bonsai Chito",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 44,
-    "fields": {
-        "action_time": "2026-06-24T13:31:49.065Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "35",
-        "object_repr": "Pedido #35 - cliente1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 45,
-    "fields": {
-        "action_time": "2026-06-24T13:31:49.065Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "34",
-        "object_repr": "Pedido #34 - cliente1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 46,
-    "fields": {
-        "action_time": "2026-06-24T13:32:03.538Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "28",
-        "object_repr": "Pedido #28 - marilia",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 47,
-    "fields": {
-        "action_time": "2026-06-24T13:32:03.538Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "27",
-        "object_repr": "Pedido #27 - marilia",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 48,
-    "fields": {
-        "action_time": "2026-06-24T13:32:03.538Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "26",
-        "object_repr": "Pedido #26 - cliente1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 49,
-    "fields": {
-        "action_time": "2026-06-24T13:32:03.539Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "25",
-        "object_repr": "Pedido #25 - cliente1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 50,
-    "fields": {
-        "action_time": "2026-06-24T13:32:03.539Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "24",
-        "object_repr": "Pedido #24 - cliente1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 51,
-    "fields": {
-        "action_time": "2026-06-24T13:32:03.539Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "23",
-        "object_repr": "Pedido #23 - cliente1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 52,
-    "fields": {
-        "action_time": "2026-06-24T13:32:03.539Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "22",
-        "object_repr": "Pedido #22 - cliente1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 53,
-    "fields": {
-        "action_time": "2026-06-24T13:32:19.969Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "33",
-        "object_repr": "Pedido #33 - cliente1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 54,
-    "fields": {
-        "action_time": "2026-06-24T13:32:19.969Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "32",
-        "object_repr": "Pedido #32 - cliente1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 55,
-    "fields": {
-        "action_time": "2026-06-24T13:32:19.969Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "31",
-        "object_repr": "Pedido #31 - cliente1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 56,
-    "fields": {
-        "action_time": "2026-06-24T13:32:19.969Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "30",
-        "object_repr": "Pedido #30 - marilia",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 57,
-    "fields": {
-        "action_time": "2026-06-24T13:32:19.969Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "29",
-        "object_repr": "Pedido #29 - marilia",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 58,
-    "fields": {
-        "action_time": "2026-06-24T13:32:19.969Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "21",
-        "object_repr": "Pedido #21 - cliente1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 59,
-    "fields": {
-        "action_time": "2026-06-24T13:32:19.969Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "19",
-        "object_repr": "Pedido #19 - cliente1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 60,
-    "fields": {
-        "action_time": "2026-06-24T13:32:19.969Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "18",
-        "object_repr": "Pedido #18 - usuarioBonsai",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 61,
-    "fields": {
-        "action_time": "2026-06-24T13:32:19.969Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "10",
-        "object_repr": "Pedido #10 - cliente1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 62,
-    "fields": {
-        "action_time": "2026-06-24T13:32:19.969Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "9",
-        "object_repr": "Pedido #9 - cliente1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 63,
-    "fields": {
-        "action_time": "2026-06-24T13:32:19.969Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "pedido"
-        ],
-        "object_id": "1",
-        "object_repr": "Pedido #1 - cliente1",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 64,
-    "fields": {
-        "action_time": "2026-06-24T18:09:16.960Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "2",
-        "object_repr": "Accura Bonsai",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Nome\", \"Descricao\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 65,
-    "fields": {
-        "action_time": "2026-06-24T18:09:45.814Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "3",
-        "object_repr": "Auto XXL Blue",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Descricao\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 66,
-    "fields": {
-        "action_time": "2026-06-24T18:10:32.750Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "3",
-        "object_repr": "Auto XXL Blue",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Categoria\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 67,
-    "fields": {
-        "action_time": "2026-06-25T03:53:37.654Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "6",
-        "object_repr": "Bonsai Oriental",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 68,
-    "fields": {
-        "action_time": "2026-06-25T03:54:20.698Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "6",
-        "object_repr": "Bonsai Oriental",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Imagem\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 69,
-    "fields": {
-        "action_time": "2026-06-25T03:54:51.568Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "6",
-        "object_repr": "Bonsai Oriental",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Imagem\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 70,
-    "fields": {
-        "action_time": "2026-06-25T03:59:23.606Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "7",
-        "object_repr": "Bonsai Atenas Freak",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 71,
-    "fields": {
-        "action_time": "2026-06-25T03:59:48.531Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "7",
-        "object_repr": "Bonsai Atenas Freak",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Imagem\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 72,
-    "fields": {
-        "action_time": "2026-06-25T04:00:27.193Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "7",
-        "object_repr": "Bonsai Atenas Freak",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Imagem\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 73,
-    "fields": {
-        "action_time": "2026-07-06T13:09:56.766Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "categoria"
-        ],
-        "object_id": "1",
-        "object_repr": "Bonsai",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Exibir na Home?\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 74,
-    "fields": {
-        "action_time": "2026-07-06T13:10:18.104Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "categoria"
-        ],
-        "object_id": "1",
-        "object_repr": "Bonsai",
-        "action_flag": 2,
-        "change_message": "[]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 75,
-    "fields": {
-        "action_time": "2026-07-06T13:18:12.979Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "8",
-        "object_repr": "Vaso oriental dragÒo",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 76,
-    "fields": {
-        "action_time": "2026-07-06T13:20:04.980Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "8",
-        "object_repr": "Vaso oriental dragÒo",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Imagem\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 77,
-    "fields": {
-        "action_time": "2026-07-06T13:20:33.125Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "5",
-        "object_repr": "Bonsai Chito",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Destacar na Home?\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 78,
-    "fields": {
-        "action_time": "2026-07-06T13:30:42.412Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "categoria"
-        ],
-        "object_id": "2",
-        "object_repr": "Vasos",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Exibir na Home?\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 79,
-    "fields": {
-        "action_time": "2026-07-06T13:31:01.940Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "8",
-        "object_repr": "Vaso oriental dragÒo",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Destacar na Home?\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 80,
-    "fields": {
-        "action_time": "2026-07-06T13:32:26.134Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "8",
-        "object_repr": "Vaso oriental dragÒo",
-        "action_flag": 2,
-        "change_message": "[]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 81,
-    "fields": {
-        "action_time": "2026-07-06T13:36:48.393Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "8",
-        "object_repr": "Vaso oriental dragÒo",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Categoria\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 82,
-    "fields": {
-        "action_time": "2026-07-06T13:37:42.933Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "categoria"
-        ],
-        "object_id": "2",
-        "object_repr": "Vasos",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Exibir na Home?\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 83,
-    "fields": {
-        "action_time": "2026-07-06T13:37:55.248Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "categoria"
-        ],
-        "object_id": "2",
-        "object_repr": "Vasos",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Exibir na Home?\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 84,
-    "fields": {
-        "action_time": "2026-07-06T13:38:06.649Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "8",
-        "object_repr": "Vaso oriental dragÒo",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Destacar na Home?\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 85,
-    "fields": {
-        "action_time": "2026-07-06T13:43:38.573Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "7",
-        "object_repr": "Bonsai Atenas Freak",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Exibir na Home?\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 86,
-    "fields": {
-        "action_time": "2026-07-06T13:43:47.462Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "6",
-        "object_repr": "Bonsai Oriental",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Exibir na Home?\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 87,
-    "fields": {
-        "action_time": "2026-07-06T13:43:52.701Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "5",
-        "object_repr": "Bonsai Chito",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Exibir na Home?\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 88,
-    "fields": {
-        "action_time": "2026-07-06T13:44:05.466Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "4",
-        "object_repr": "24k",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Exibir na Home?\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 89,
-    "fields": {
-        "action_time": "2026-07-06T13:44:10.041Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "3",
-        "object_repr": "Auto XXL Blue",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Exibir na Home?\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 90,
-    "fields": {
-        "action_time": "2026-07-06T13:44:14.360Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "2",
-        "object_repr": "Accura Bonsai",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Exibir na Home?\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 91,
-    "fields": {
-        "action_time": "2026-07-06T13:44:32.600Z",
-        "user": [
-            "admin"
-        ],
-        "content_type": [
-            "produtos",
-            "produto"
-        ],
-        "object_id": "8",
-        "object_repr": "Vaso oriental dragÒo",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Exibir na Home?\"]}}]"
-    }
-}
 ]
