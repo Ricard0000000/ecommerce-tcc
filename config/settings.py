@@ -89,6 +89,8 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+WHITENOISE_ROOT = MEDIA_ROOT
+WHITENOISE_INDEX_FILE = True
 
 # 🔐 LOGIN
 LOGIN_URL = '/login/'
