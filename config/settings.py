@@ -111,7 +111,7 @@ JAZZMIN_SETTINGS = {
     "show_ui_builder": False,
     "topmenu_links": [],
     "usermenu_links": [],
-    "custom_css": None,
+    "custom_css": "admin/css/custom_admin.css",
     "custom_js": None,
 }
 

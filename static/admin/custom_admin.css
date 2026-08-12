@@ -1,0 +1,8 @@
+/* Esconde as frases de contagem de paginação do Jazzmin */
+.dataTables_info,
+.pagination .page-item.disabled,
+.card-footer .float-left,
+.card-footer .text-muted,
+div.dataTables_wrapper div.dataTables_info {
+    display: none !important;
+}
