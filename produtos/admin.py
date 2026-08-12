@@ -16,6 +16,7 @@ class ItemPedidoInline(admin.TabularInline):
 @admin.register(Categoria)
 class CategoriaAdmin(admin.ModelAdmin):
     list_display = ('exibir_nome',)
+    show_full_result_count = False  # 🛑 Oculta a contagem de resultados
     
     def exibir_nome(self, obj): return obj.nome
     exibir_nome.short_description = "" # Sem título
@@ -24,13 +25,14 @@ class CategoriaAdmin(admin.ModelAdmin):
 
 @admin.register(Produto)
 class ProdutoAdmin(admin.ModelAdmin):
-    # Removido o 'destaque_home' daqui:
     list_display = ('nome', 'preco', 'estoque', 'ativo')
     list_editable = ('ativo',)
+    show_full_result_count = False  # 🛑 Oculta a contagem de resultados
 
 @admin.register(Banner)
 class BannerAdmin(admin.ModelAdmin):
     list_display = ('ativo_exibicao',)
+    show_full_result_count = False  # 🛑 Oculta a contagem de resultados
     
     def ativo_exibicao(self, obj): return obj.ativo
     ativo_exibicao.short_description = "Ativo"
@@ -41,6 +43,7 @@ class BannerAdmin(admin.ModelAdmin):
 class PedidoAdmin(admin.ModelAdmin):
     list_display = ('cliente_exibicao', 'status_exibicao', 'total_exibicao', 'data_exibicao')
     inlines = [ItemPedidoInline]
+    show_full_result_count = False  # 🛑 Oculta a contagem de resultados
     
     def cliente_exibicao(self, obj): return obj.nome_cliente
     cliente_exibicao.short_description = "Cliente"
