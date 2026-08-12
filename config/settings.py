@@ -83,9 +83,9 @@ USE_TZ = True
 
 # 📁 STATIC & MEDIA
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / "static"]
 STATIC_ROOT = BASE_DIR / "staticfiles"
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+# Usamos CompressedStaticFilesStorage para evitar falhas caso falte algum mapa de estáticos
+STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
@@ -103,7 +103,7 @@ JAZZMIN_SETTINGS = {
     "site_header": "Painel de Controle",
     "site_brand": "Bonsai Garden",
     "site_url": "/admin/",
-    "index_url": "/admin/",  # 👈 Passar o caminho direto resolve o "Could not reverse url from admin"
+    "index_url": "/admin/",
     "welcome_sign": "Bem-vindo ao sistema de gestão",
     "copyright": "Bonsai Garden TCC",
     "show_sidebar": True,
@@ -111,7 +111,7 @@ JAZZMIN_SETTINGS = {
     "show_ui_builder": False,
     "topmenu_links": [],
     "usermenu_links": [],
-    "custom_css": None,      # 👈 Voltamos para None para eliminar o erro 404
+    "custom_css": None,
     "custom_js": None,
 }
 
