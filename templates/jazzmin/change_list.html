@@ -1,0 +1,16 @@
+{% extends "admin/change_list.html" %}
+
+{% block extrahead %}
+{{ block.super }}
+<style>
+    /* Oculta frases de contagem, DataTables info e paginacao desativada */
+    .dataTables_info,
+    .pagination .page-item.disabled,
+    .card-footer .float-left,
+    .card-footer .text-muted,
+    div.dataTables_wrapper div.dataTables_info,
+    .small.text-muted {
+        display: none !important;
+    }
+</style>
+{% endblock %}
