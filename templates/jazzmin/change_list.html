@@ -3,7 +3,7 @@
 {% block extrahead %}
 {{ block.super }}
 <style>
-    /* Oculta frases de contagem, DataTables info e paginacao desativada */
+    /* Esconde as frases de contagem de paginação e resumos do Jazzmin */
     .dataTables_info,
     .pagination .page-item.disabled,
     .card-footer .float-left,
@@ -13,4 +13,9 @@
         display: none !important;
     }
 </style>
+
+<!-- TESTE VISUAL: Se isso aparecer, o Render atualizou! -->
+<script>
+    console.log("Template do Jazzmin carregado com sucesso!");
+</script>
 {% endblock %}
