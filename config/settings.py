@@ -19,7 +19,7 @@ ALLOWED_HOSTS = ['*']
 
 # 🚀 APPS
 INSTALLED_APPS = [
-    'jazzmin', # Mantido, pois você quer o visual dele
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -97,17 +97,42 @@ LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
-# 🎨 JAZZMIN CONFIGURATION (Aqui está a chave para o visual)
+# 🎨 JAZZMIN CONFIGURATION
 JAZZMIN_SETTINGS = {
     "site_title": "Bonsai Garden Admin",
     "site_header": "Painel de Controle",
     "site_brand": "Bonsai Garden",
+    "site_url": "/admin/",
+    "index_url": "/admin/",  # 👈 Passar o caminho direto resolve o "Could not reverse url from admin"
     "welcome_sign": "Bem-vindo ao sistema de gestão",
     "copyright": "Bonsai Garden TCC",
     "show_sidebar": True,
     "navigation_expanded": True,
-    # Removi o custom_css temporariamente para evitar erro 404. 
-    # Só adicione de volta se o arquivo existir fisicamente na pasta static/css/custom.css
+    "show_ui_builder": False,
+    "topmenu_links": [],
+    "usermenu_links": [],
+    "custom_css": None,      # 👈 Voltamos para None para eliminar o erro 404
+    "custom_js": None,
+}
+
+JAZZMIN_UI_TWEAKS = {
+    "navbar_small_text": False,
+    "footer_small_text": False,
+    "body_small_text": False,
+    "brand_small_text": False,
+    "brand_colour": False,
+    "accent": "accent-primary",
+    "navbar": "navbar-white navbar-light",
+    "no_navbar_border": False,
+    "navbar_fixed": False,
+    "layout_boxed": False,
+    "footer_fixed": False,
+    "sidebar_fixed": False,
+    "sidebar": "sidebar-dark-primary",
+    "sidebar_nav_small_text": False,
+    "theme": "default",
+    "default_theme_mode": "light",
+    "sidebar_nav_child_indent": False,
 }
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
@@ -125,6 +150,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = '95ricard0.c0rrea@gmail.com'  # 👈 Seu e-mail do Gmail aqui
-EMAIL_HOST_PASSWORD = 'kgxygheaqopgbmxq'  # 👈 A senha de 16 letras entra aqui, sem espaços
-DEFAULT_FROM_EMAIL = 'Bonsai Garden <seu-email@gmail.com>'
+EMAIL_HOST_USER = '95ricard0.c0rrea@gmail.com'
+EMAIL_HOST_PASSWORD = 'kgxygheaqopgbmxq'
+DEFAULT_FROM_EMAIL = 'Bonsai Garden <95ricard0.c0rrea@gmail.com>'

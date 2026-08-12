@@ -1,0 +1,76 @@
+{% extends "admin/base.html" %}
+
+{% block extrahead %}
+{{ block.super }}
+<style>
+    /* 1. Esconde o botão Dashboard e o título no menu lateral */
+    #jazzy-navigation > li.nav-item:first-child,
+    #jazzy-navigation > li.nav-header {
+        display: none !important;
+    }
+
+    /* 2. Remove o cursor de clique do painel do usuário */
+    .user-panel, 
+    .user-panel *, 
+    .user-panel a {
+        cursor: default !important;
+        pointer-events: none;
+    }
+
+    /* 3. Substitui "admin" por "Painel Administrativo" */
+    .user-panel .info a,
+    .user-panel .info span {
+        font-size: 0 !important;
+    }
+
+    .user-panel .info a::after,
+    .user-panel .info span::after {
+        content: "Painel Administrativo";
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #c2c7d0;
+    }
+
+    /* 4. ESCONDE A CONTAGEM E RODAPÉS DE TODAS AS TABELAS */
+    .paginator,
+    p.paginator,
+    .quiet,
+    .small.quiet,
+    .card-footer,
+    #changelist .paginator,
+    #changelist-form .quiet,
+    #changelist-form + p,
+    #changelist-form ~ p,
+    .card-body + p {
+        display: none !important;
+    }
+
+    /* 5. ESCONDE O BOTÃO SALVAR DA LISTAGEM E BARRA DE AÇÕES */
+    #changelist-form .actions,
+    #changelist-form button[type="submit"],
+    #changelist-form input[type="submit"] {
+        display: none !important;
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Remove qualquer elemento textual de contagem restante no DOM
+        const removerContadores = () => {
+            const elementos = document.querySelectorAll('.paginator, p.paginator, .quiet, .card-footer');
+            elementos.forEach(el => el.style.setProperty('display', 'none', 'important'));
+
+            // Busca parágrafos soltos que contenham o texto de contagem
+            const paragrafos = document.querySelectorAll('#changelist-form p, #content-main p');
+            paragrafos.forEach(p => {
+                if (/\d+\s+(produtos|pedidos|banners|categorias|produto|pedido|banner|categoria)/i.test(p.textContent)) {
+                    p.style.setProperty('display', 'none', 'important');
+                }
+            });
+        };
+
+        removerContadores();
+        setTimeout(removerContadores, 300);
+    });
+</script>
+{% endblock %}
