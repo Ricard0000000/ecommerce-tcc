@@ -145,8 +145,13 @@ MELHOR_ENVIO_REDIRECT_URI = os.getenv("MELHOR_ENVIO_REDIRECT_URI")
 CEP_ORIGEM = os.getenv("CEP_ORIGEM")
 MELHOR_ENVIO_ACCESS_TOKEN = os.getenv("MELHOR_ENVIO_ACCESS_TOKEN")
 
-# Configurações de Envio de E-mail (Gmail SMTP)
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# Configurações de Envio de E-mail
+# No Render (produção), imprime os e-mails no log para evitar travamento (Timeout); localmente usa o Gmail SMTP
+if os.getenv('RENDER'):
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+else:
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
