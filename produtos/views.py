@@ -1,12 +1,15 @@
+import os
+from decimal import Decimal
+
+import requests
 import mercadopago
 from django.conf import settings
-from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
-from decimal import Decimal
-from .models import Produto, Categoria, Banner, Pedido, ItemPedido
+from django.shortcuts import render, redirect, get_object_or_404
 
+from .models import Produto, Categoria, Banner, Pedido, ItemPedido, MelhorEnvioToken
 @login_required
 def teste_melhor_envio(request):
     from .melhor_envio import testar_api
@@ -437,35 +440,54 @@ def detalhe_pedido(request, pedido_id):
 
 
 # ⚡ MERCADO PAGO: PIX
+# ⚡ MERCADO PAGO: PIX
 @login_required
 def pagamento_pix(request, pedido_id):
     pedido = get_object_or_404(Pedido, id=pedido_id, usuario=request.user)
     qr_code = None
     qr_code_base64 = None
 
-    try:
-        sdk = mercadopago.SDK(settings.MERCADOPAGO_ACCESS_TOKEN)
-        payment_data = {
-            "transaction_amount": float(pedido.total),
-            "description": f"Pedido #{pedido.id}",
-            "payment_method_id": "pix",
-            "payer": {
-                "email": pedido.usuario.email
+    # Tenta obter o token do settings ou das variáveis de ambiente do sistema/Render
+    token_mp = getattr(settings, 'MERCADOPAGO_ACCESS_TOKEN', None) or os.getenv('MERCADOPAGO_ACCESS_TOKEN')
+
+    if not token_mp:
+        print("ERRO MP: Token do Mercado Pago não encontrado no settings ou .env")
+    else:
+        try:
+            sdk = mercadopago.SDK(str(token_mp))
+            
+            # Divide nome e sobrenome do usuário, se disponível
+            nome = request.user.first_name if request.user.first_name else request.user.username
+            sobrenome = request.user.last_name if request.user.last_name else "Cliente"
+
+            payment_data = {
+                "transaction_amount": float(pedido.total),
+                "description": f"Pedido #{pedido.id}",
+                "payment_method_id": "pix",
+                "payer": {
+                    "email": pedido.usuario.email or "email@cliente.com",
+                    "first_name": nome,
+                    "last_name": sobrenome,
+                }
             }
-        }
 
-        resultado = sdk.payment().create(payment_data)
+            resultado = sdk.payment().create(payment_data)
 
-        if resultado["status"] == 201:
-            resposta = resultado["response"]
-            pedido.mercadopago_id = str(resposta["id"])
-            pedido.save()
+            if resultado.get("status") == 201:
+                resposta = resultado.get("response", {})
+                pedido.mercadopago_id = str(resposta.get("id"))
+                pedido.save()
 
-            qr_code = resposta["point_of_interaction"]["transaction_data"]["qr_code"]
-            qr_code_base64 = resposta["point_of_interaction"]["transaction_data"]["qr_code_base64"]
+                point_of_interaction = resposta.get("point_of_interaction", {})
+                transaction_data = point_of_interaction.get("transaction_data", {})
 
-    except Exception as e:
-        print("ERRO MP:", e)
+                qr_code = transaction_data.get("qr_code")
+                qr_code_base64 = transaction_data.get("qr_code_base64")
+            else:
+                print(f"ERRO MP resposta API: {resultado}")
+
+        except Exception as e:
+            print("ERRO MP:", e)
 
     return render(request, 'pagamento_pix.html', {
         'pedido': pedido,
