@@ -198,6 +198,7 @@ urlpatterns = [
         name='painel'
     ),
 
+    # MANUTENÇÃO DE PRODUTOS
     path(
         'painel/editar/<int:id>/',
         editar_produto,
@@ -211,6 +212,8 @@ urlpatterns = [
     ),
 ]
 
-# Libera serviço de Mídia e Estáticos sem depender do modo DEBUG
+# --------------------------------------------------------------------------
+# 🖼️ SERVIR ARQUIVOS DE MÍDIA E ESTÁTICOS
+# --------------------------------------------------------------------------
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
