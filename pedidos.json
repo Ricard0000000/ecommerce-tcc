@@ -1,0 +1,98 @@
+[
+{
+  "model": "produtos.pedido",
+  "pk": 36,
+  "fields": {
+    "usuario": 2,
+    "criado_em": "2026-06-11T12:48:34.804Z",
+    "total": "1.00",
+    "status": "pendente",
+    "mercadopago_id": "163632519444",
+    "nome_cliente": "yy",
+    "telefone": "yy",
+    "cep": "yy",
+    "cidade": "yy",
+    "endereco": "yy",
+    "numero": "yy",
+    "complemento": "yy",
+    "valor_frete": "0.00",
+    "tipo_frete": "Padrão",
+    "prazo_entrega": null,
+    "codigo_frete": null
+  }
+},
+{
+  "model": "produtos.pedido",
+  "pk": 37,
+  "fields": {
+    "usuario": 2,
+    "criado_em": "2026-06-11T17:03:38.309Z",
+    "total": "1.00",
+    "status": "pago",
+    "mercadopago_id": "163633940834",
+    "nome_cliente": "1",
+    "telefone": "1",
+    "cep": "1",
+    "cidade": "1",
+    "endereco": "1",
+    "numero": "1",
+    "complemento": "1",
+    "valor_frete": "0.00",
+    "tipo_frete": "Padrão",
+    "prazo_entrega": null,
+    "codigo_frete": null
+  }
+},
+{
+  "model": "produtos.pedido",
+  "pk": 38,
+  "fields": {
+    "usuario": 4,
+    "criado_em": "2026-06-23T19:43:43.323Z",
+    "total": "1.00",
+    "status": "pendente",
+    "mercadopago_id": "165491726202",
+    "nome_cliente": "aa",
+    "telefone": "aa",
+    "cep": "36802046",
+    "cidade": "aa",
+    "endereco": "aa",
+    "numero": "aa",
+    "complemento": "aa",
+    "valor_frete": "0.00",
+    "tipo_frete": "Padrão",
+    "prazo_entrega": null,
+    "codigo_frete": null
+  }
+},
+{
+  "model": "produtos.itempedido",
+  "pk": 54,
+  "fields": {
+    "pedido": 36,
+    "produto": 5,
+    "preco": "1.00",
+    "quantidade": 1
+  }
+},
+{
+  "model": "produtos.itempedido",
+  "pk": 55,
+  "fields": {
+    "pedido": 37,
+    "produto": 5,
+    "preco": "1.00",
+    "quantidade": 1
+  }
+},
+{
+  "model": "produtos.itempedido",
+  "pk": 56,
+  "fields": {
+    "pedido": 38,
+    "produto": 5,
+    "preco": "1.00",
+    "quantidade": 1
+  }
+}
+]
