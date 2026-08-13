@@ -1,10 +1,20 @@
 from django.contrib import admin
+from django.contrib.auth.admin import UserAdmin
 from django.contrib.auth.models import Group, User
 from .models import Produto, Categoria, Banner, Pedido, ItemPedido
 
-# 1. REMOVE GRUPOS E USUÁRIOS
+# 1. REMOVE APENAS GRUPOS (MANTÉM USUÁRIOS ATIVOS NO ADMIN)
 admin.site.unregister(Group)
-admin.site.unregister(User)
+
+# Re-registra o modelo de Usuários do Django para aparecer no Admin
+try:
+    admin.site.unregister(User)
+except admin.sites.NotRegistered:
+    pass
+
+@admin.register(User)
+class CustomUserAdmin(UserAdmin):
+    show_full_result_count = False
 
 # 2. INLINES
 class ItemPedidoInline(admin.TabularInline):
